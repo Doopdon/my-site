@@ -1,23 +1,10 @@
 'use strict';
-
-class LikeButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { liked: false };
+function Welcome(props) {
+    return <h1>Hello, {props.name}</h1>;
   }
 
-  render() {
-    if (this.state.liked) {
-      return 'You liked this.';
-    }
-
-    return (
-        <button onClick={() => this.setState({ liked: true })}>
-          Like
-        </button>
-      );
-  }
-}
-
-const domContainer = document.querySelector('#react-comp');
-ReactDOM.render(e(LikeButton), domContainer);
+const element = <Welcome name="Dude man" />;
+ReactDOM.render(
+    element,
+    document.getElementById('react-comp')
+);
