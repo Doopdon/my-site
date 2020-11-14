@@ -1,0 +1,89 @@
+.prop{
+   animation: spin .1s infinite linear;
+   transform-origin: 50% 50%;
+   transform-box: fill-box;
+}
+
+.plane{
+   animation: sore 3s infinite ease-in-out;
+}
+
+.cloud.big{
+   animation: drift 10s infinite linear;
+}
+
+.cloud.small{
+   animation: drift 20s infinite linear;
+}
+
+.cloud.mid{
+   animation: drift 15s infinite linear;
+}
+
+.ground{
+   animation: drift 30s infinite linear;
+}
+
+.white-out{
+   opacity: 0;
+   /* animation: whiteOut 30s infinite linear;
+   transform-origin: 50% 50%;
+   transform-box: fill-box; */
+}
+
+@keyframes whiteOut{
+   0%{
+      transform: scale(11);
+      opacity: 1;
+   }
+   10%{
+      opacity: 1;
+   }
+   20%{
+      opacity: 0;
+   }
+   80%{
+      opacity: 0;
+   }
+   90%{
+      opacity: 1;
+   }
+   100%{
+      transform: scale(10);
+      opacity: 0;
+   }
+}
+
+
+@keyframes drift{
+   0%{
+      transform: translate(-100%,40%);
+   }
+   100%{
+      transform: translate(100%,-40%);
+   }
+}
+
+@keyframes sore{
+   0%{
+      transform: translate(0%,2%);
+   }
+   50%{
+      transform: translate(0%,-2%);
+   }
+   100%{
+      transform: translate(0%,2%);
+   }
+}
+
+@keyframes spin {
+   0%{
+      transform: rotate(-10deg);
+   }
+   50%{
+      transform: rotate(10deg);
+   }
+   100%{
+      transform: rotate(-10deg);
+   }
+}

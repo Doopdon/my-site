@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <div id="app">
+        <title-elem></title-elem>
+        <ol>
+          <li v-for="todo in todos">
+            {{ todo.text }}
+          </li>
+        </ol>
+        <input v-model="newTodo.text">
+        <button onclick="addTodo()">Add todo</button>
+      </div>
+</body>
+<script src='/frameworks/vue/scripts/vue-base.js'></script>
+</html>

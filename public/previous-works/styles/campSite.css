@@ -1,0 +1,76 @@
+#camp-site-scene {
+   height: 100vh;
+   overflow: hidden;
+ }
+ #camp-site-scene div {
+   height: 100%;
+ }
+ #camp-site-scene .smoke-wrapper {
+   animation: smoke 3s infinite ease-out;
+ }
+ #camp-site-scene .smoke {
+   animation: puff 3s infinite linear;
+   transform-origin: 50% 100%;
+   transform-box: fill-box;
+ }
+ #camp-site-scene .flame {
+   animation: flame 0.4s infinite linear;
+   transform-origin: 50% 100%;
+   transform-box: fill-box;
+ }
+ @keyframes smoke {
+   0% {
+     transform: translate(0%, 0%);
+     opacity: 0;
+   }
+   20% {
+     opacity: 1;
+   }
+   100% {
+     transform: translate(0%, -10%);
+     opacity: 0;
+   }
+ }
+ @keyframes puff {
+   0% {
+     transform: scale(1);
+   }
+   100% {
+     transform: scale(5);
+   }
+ }
+ @keyframes flame {
+   /* second delay */
+   0% {
+     transform: scale(0.1);
+   }
+   100% {
+     transform: scale(1);
+   }
+ }
+ #camp-site-scene .s-0 {
+   animation-delay: 0s;
+ }
+ #camp-site-scene .s-1 {
+   animation-delay: 1s;
+ }
+ #camp-site-scene .s-2 {
+   animation-delay: 2s;
+ }
+ #camp-site-scene .s-3 {
+   animation-delay: 3s;
+   /* tens of second delay */
+ }
+ #camp-site-scene .ts-0 {
+   animation-delay: 0s;
+ }
+ #camp-site-scene .ts-1 {
+   animation-delay: 0.1s;
+ }
+ #camp-site-scene .ts-2 {
+   animation-delay: 0.2s;
+ }
+ #camp-site-scene .ts-3 {
+   animation-delay: 0.3s;
+ }
+ 

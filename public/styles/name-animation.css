@@ -1,0 +1,51 @@
+.first{
+    
+    animation-name: move-right;
+    animation-duration: 4s;
+}
+.last{
+    animation-name: move-left;
+    animation-duration: 4s;
+}
+.name{
+    text-shadow: black 0px 0px 12px;
+}
+.name-container{
+    color: hotpink;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Syne Mono', monospace;
+    animation-name: spin;
+    animation-duration: 4s;
+    border-radius: 50%;
+    background-color: rgba(60, 173, 201, 0.8);
+    box-shadow: black 0,0,12px;
+}
+
+@keyframes spin{
+    0%{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes move-right {
+    from {
+        transform: translate(-100%,0);
+    }
+    to {
+        transform: translate(0,0);
+    }
+  }
+
+  @keyframes move-left {
+    from {
+        transform: translate(100%,0);
+    }
+    to {
+        transform: translate(0,0);
+    }
+  }

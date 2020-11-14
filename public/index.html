@@ -1,1 +1,102 @@
-<h1>This is the index</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/base.css">
+<link rel="stylesheet" href="styles/pancake.css">
+<link rel="stylesheet" href="styles/background.css">
+<link rel="stylesheet" href="styles/infobox.css">
+<link rel="stylesheet" href="styles/name-animation.css">
+<link rel="stylesheet" href="styles/intro.css">
+</head>
+<body>
+    <div class='intro-background'>
+        <div class='into'>
+            <div class='left-side'>
+                <div class='name-container'>
+                    <div class='first name'>Gannon</div>
+                    <div class='last name'>Huiting</div>
+                </div>
+            </div>
+            <div class='right-side'>
+                <div class='info-box'>
+                    <h1>Framework demos</h1>
+                    <a href="/frameworks/react/react-demo.html" class='skill-button'>
+                        React
+                    </a>
+                    <a href="/frameworks/vue/vue.html" class='skill-button'>
+                        Vue
+                    </a>
+                    <a href="/previous-works/css-animations.html" class='skill-button'>
+                        Angular (coming soon)
+                    </a>
+                    <h3>Previous Works</h3>
+                    <a href="/previous-works/css-animations.html" class='skill-button'>
+                        Svg Animations
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3>So here are some examples of things I can do</h3>
+
+    <div class="spacer"></div>
+    <h3 class='skill-title'>Pancake Image links</h3>
+    <p class='skill-description'>Here are 3 images that serve as links to other pages, They are responsive, and automatically stack in an esthetic way.</p>
+    <div class='pancake-links' id='to-clone-to'>
+        <a href='/' class='link-container'>
+            <div class='image-container'>
+                <img src='images/roses.jpg'>
+            </div>
+            <p>Pink Flowers</p>
+        </a>
+        <a href='/' class='link-container'>
+            <div class='image-container'>
+                <img src='images/tulips.jpg'>
+            </div>
+            <p>Tulips</p>
+        </a>
+        <a href='/' class='link-container' id='to-clone'>
+            <div class='image-container'>
+                <img src='images/yellow-roses.jpg'>
+            </div>
+            <p>Yellow Flowers</p>
+        </a>
+    </div>
+    <div>
+        <p>A few details to note:</p>
+        <p>-The images get bigger when you hover over them, so does the shadow.</p>
+        <p>-The images get bigger without shifting the elements around it. It stays contained. </p>
+        <p>-The text under each image still acts as a link, but does not have the default blue underline of a link</p>
+        <p>-Also know that this is in no way limited to 3 images, if you zoom out and add a new image, it will dynamically react <button onclick="addNewImage()">Add image</button></p>
+    </div>
+    <script>
+        //A very quick function to add an element to the end of the pancake menu.
+        function addNewImage(){
+            var $elem = document.getElementById('to-clone').cloneNode(true);
+            document.getElementById('to-clone-to').appendChild($elem);
+        }
+    </script>
+
+    <div class='background-window background-1'>
+        <div class='window-content'>
+            <p>There is Beauty in Simplicity</p>
+        </div>
+    </div>
+    <div class='spacer'></div>
+    <div class='background-window background-2'>
+        <div class='window-content'>
+            <p>Be What you Seek</p>
+        </div>
+    </div>
+    <div class='spacer'></div>
+    <div class='background-window background-3'>
+        <div class='window-content'>
+            <p>Flowers Smell Good</p>
+        </div>
+    </div>
+</body>
+</html>

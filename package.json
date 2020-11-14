@@ -10,6 +10,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "@vue/cli": "^4.5.8",
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "compile-sass": "^1.1.1",
+    "express": "^4.17.1",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "vue-property-decorator-transpiler": "^2.0.5"
   }
 }

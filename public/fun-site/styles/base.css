@@ -1,0 +1,29 @@
+body{
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: linear-gradient(to bottom right, pink, lightblue, lightblue, lightblue);
+    color: darkslateblue
+}
+
+.cell-container{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.blue-purple{
+    background-image: linear-gradient(to bottom left,darkslateblue,darkblue );
+}
+
+.cell{
+    max-width: 700px;
+
+    opacity: .8;
+    padding: 15px;
+}
+
+
+.cell p{
+    color: white
+}

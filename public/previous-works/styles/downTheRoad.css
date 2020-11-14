@@ -1,0 +1,48 @@
+#down-the-road-scene {
+   height: 100vh;
+   overflow: hidden;
+ }
+ #down-the-road-scene div {
+   height: 100%;
+ }
+ #down-the-road-scene .tag {
+   opacity: 0;
+ }
+ #down-the-road-scene .tree {
+   animation: pass-by 4s infinite linear;
+   /*delays*/
+ }
+ #down-the-road-scene .sd-0 {
+   animation-delay: 0s;
+ }
+ #down-the-road-scene .sd-1 {
+   animation-delay: 1s;
+ }
+ #down-the-road-scene .sd-2 {
+   animation-delay: 2s;
+ }
+ #down-the-road-scene .sd-3 {
+   animation-delay: 3s;
+ }
+ #down-the-road-scene .sd-4 {
+   animation-delay: 4s;
+ }
+ #down-the-road-scene .sd-5 {
+   animation-delay: 5s;
+ }
+ #down-the-road-scene .sd-6 {
+   animation-delay: 6s;
+ }
+ #down-the-road-scene .sd-7 {
+   animation-delay: 7s;
+   /*animations */
+ }
+ @keyframes pass-by {
+   0% {
+     transform: translate(0%, 0%);
+   }
+   100% {
+     transform: translate(110%, -110%);
+   }
+ }
+ 
