@@ -13,7 +13,6 @@
 .name-container{
     color: hotpink;
     font-family: 'Permanent Marker', cursive;
-    font-family: 'Syne Mono', monospace;
     animation-name: spin;
     animation-duration: 4s;
     border-radius: 50%;
