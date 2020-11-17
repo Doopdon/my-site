@@ -1,5 +1,4 @@
 .first{
-    
     animation-name: move-right;
     animation-duration: 4s;
 }
@@ -8,16 +7,17 @@
     animation-duration: 4s;
 }
 .name{
+    font-size: 80px;
     text-shadow: black 0px 0px 12px;
 }
 .name-container{
-    color: hotpink;
+    color: white;
     font-family: 'Permanent Marker', cursive;
     animation-name: spin;
     animation-duration: 4s;
     border-radius: 50%;
     background-color: rgba(60, 173, 201, 0.8);
-    box-shadow: black 0,0,12px;
+    box-shadow: 1px 1px 48px #000000;
 }
 
 @keyframes spin{

@@ -14,13 +14,22 @@
 }
 
 .left-side{
-    width:60%;
+    width:100%;
     display: grid;
     place-items: center;
 }
 
-.right-side{
+/* .right-side{
     width:40%;
     display: grid;
     place-items: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .left-side {
+        width:100%;
+    }
+    .right-side{
+        width:100%;
+    }
+} */

@@ -1,0 +1,19 @@
+.nav-bar{
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    padding:10px
+}
+
+.nav-bar div{
+    width: 25%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-bar div:hover{
+    text-decoration: underline;
+}
