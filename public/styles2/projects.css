@@ -1,0 +1,28 @@
+#projects .project{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#projects .project{
+    margin: 5%;
+}
+
+#projects .project .left{
+    margin: 0 auto 0 auto;
+    background-color: grey;
+    width: 40%;
+}
+
+#projects .image{
+    margin: auto;
+    height: 30vh;
+    width: 30%;
+    text-align: right
+}
+
+#projects img{
+    /* width: 100%; */
+    height: 100%;
+}

@@ -1,3 +1,17 @@
 #about-me{
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#about-me .right{
     
+}
+
+#about-me .left{
+
+}
+
+#about-me .skill-wrapper{
+    display: flex;
+    flex-direction: row;
 }
