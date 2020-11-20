@@ -1,14 +1,26 @@
 #about-me{
+    display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    flex-direction: row;
+    width: 100vw;
 }
 
-#about-me .right{
-    
+#about-me .content{
+    width: 40vw;
 }
 
-#about-me .left{
+#about-me .profile-pic{
+    width: 40vw;
+    display: grid;
+    place-items: center;
+}
 
+#about-me img{
+    width:25vw;
+    height: 25vw;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #888888;
 }
 
 #about-me .skill-wrapper{

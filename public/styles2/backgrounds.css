@@ -1,5 +1,5 @@
 .image-wrapper{
-    height: 500px;
+    height: 95vh;
     place-items: center;
     display: grid;
     background-repeat: no-repeat;
@@ -30,5 +30,13 @@
 }
 
 .image-wrapper .image-caption{
+    padding: 1vw;
+    color: white;
+    font-size: 20pt;
+    font-weight: 600;
+    letter-spacing: 8px;
+}
 
+.image-wrapper .name{
+    background-color: grey;
 }
