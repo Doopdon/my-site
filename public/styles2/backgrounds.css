@@ -1,0 +1,34 @@
+.image-wrapper{
+    height: 500px;
+    place-items: center;
+    display: grid;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("/images/grass-background.jpg");
+}
+
+.image-wrapper.denver{
+    background-image: url("/images/denver.jpg");
+}
+
+.image-wrapper.denver-wide{
+    background-image: url("/images/denver-wide-shot.jpeg");
+}
+
+
+.image-wrapper.dia{
+    background-image: url("/images/denver-int-airport.jpg");
+}
+
+.image-wrapper.big-blue-bear{
+    background-image: url("/images/big-blue-bear.jpg");
+}
+
+.image-wrapper.mountains{
+    background-image: url("/images/mountain-sun-set.jpg");
+}
+
+.image-wrapper .image-caption{
+
+}
