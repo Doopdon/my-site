@@ -1,4 +1,5 @@
 'use strict';
+import Components from './components.js'
 
 
 let pages = ['main','components','state']
@@ -10,11 +11,16 @@ class Index extends React.Component{
     constructor(props) {
         super(props);
         this.state = {page:pages[pageIndex]}
-        this.click = this.click.bind(this);
+        this.next = this.next.bind(this);
+        this.prev = this.prev.bind(this);
     }
 
-    click(){
+    next(){
         this.setState({page:pages[++pageIndex]});
+    }
+
+    prev(){
+        this.setState({page:pages[--pageIndex]});
     }
     
     setPage(page){
@@ -28,7 +34,8 @@ class Index extends React.Component{
 
     render(){
         return <div>
-            <button onClick={this.click}>Next page</button>
+            <button onClick={this.prev}>Previous page</button>
+            <button onClick={this.next}>Next page</button>
             {this.setPage(this.state.page)}
         </div>
     }

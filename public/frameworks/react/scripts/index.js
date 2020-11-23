@@ -8,6 +8,8 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+import Components from './components.js';
+
 var pages = ['main', 'components', 'state'];
 var pageIndex = 0;
 
@@ -20,14 +22,20 @@ var Index = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Index.__proto__ || Object.getPrototypeOf(Index)).call(this, props));
 
         _this.state = { page: pages[pageIndex] };
-        _this.click = _this.click.bind(_this);
+        _this.next = _this.next.bind(_this);
+        _this.prev = _this.prev.bind(_this);
         return _this;
     }
 
     _createClass(Index, [{
-        key: 'click',
-        value: function click() {
+        key: 'next',
+        value: function next() {
             this.setState({ page: pages[++pageIndex] });
+        }
+    }, {
+        key: 'prev',
+        value: function prev() {
+            this.setState({ page: pages[--pageIndex] });
         }
     }, {
         key: 'setPage',
@@ -44,7 +52,12 @@ var Index = function (_React$Component) {
                 null,
                 React.createElement(
                     'button',
-                    { onClick: this.click },
+                    { onClick: this.prev },
+                    'Previous page'
+                ),
+                React.createElement(
+                    'button',
+                    { onClick: this.next },
                     'Next page'
                 ),
                 this.setPage(this.state.page)

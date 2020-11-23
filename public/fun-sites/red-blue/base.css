@@ -1,0 +1,152 @@
+*{box-sizing: border-box;}
+body{
+    margin:0;
+    color:black;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.frame{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.inner{
+    background-color: red;
+    position: absolute;
+    top:10vh;
+    width:60vw;
+    left:20vw;
+    height: 80vh;
+    background-image: linear-gradient(to bottom right, rgb(123,205,219),rgb(233,73,55));
+}
+
+.big-pill{
+    position: absolute;
+    top:20vh;
+    width: min(40vw, 40vh);
+    left:calc(50vw - min(40vw, 40vh)/2);
+    height: 60vh;
+    border-radius: 20vw;
+    background-image: linear-gradient(to top left, rgb(123,205,219),rgb(233,73,55));
+}
+
+.inner-pill{
+    position: absolute;
+    top:35vh;
+    width:min(25vw,25vh);
+    left:calc(50vw - min(25vw,25vh)/2);
+    height: 30vh;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom right, rgb(233,72,55),rgb(191,49,43));
+    
+}
+
+.shadow-pill{
+    position: absolute;
+    top:40vh;
+    width:min(15vw,15vh);
+    left:calc(50vw - min(15vw,15vh)/2);
+    height: 20vh;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom right, rgb(164,41,35),rgb(233,72,55));
+}
+
+.center-pill{
+    position: absolute;
+    width:min(12vw,12vh);
+    left:calc(50vw - min(12vw,12vh)/2);
+    height: 18vh;
+    top:42vh;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, rgb(123,205,219),rgb(233,73,55));
+}
+
+.side-pill{
+    animation-name: float-1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    position: absolute;
+    bottom:5vh;
+    width:min(5vw,5vh);
+    left:25vw;
+    height: 20vh;
+    border-radius: 2.5vw;
+    background-image: linear-gradient(to bottom left, rgb(123,205,219),rgb(233,73,55));
+}
+
+.vertical-line-left{
+    animation-name: pull-up;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+    position: absolute;
+    height:45vh;
+    width:min(5vw,5vh);
+    top:0;
+    left:max(40vw, calc(50vw - 10vh));
+    background-image: linear-gradient(to bottom, rgb(164,41,35),rgb(233,72,55));
+    border-radius: min(5vw,5vh);
+}
+
+.vertical-line-right{
+    animation-name: pull-down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+    position: absolute;
+    height:45vh;
+    width:min(5vw,5vh);
+    background-color:darkred;
+    bottom:0;
+    right:max(40vw, calc(50vw - 10vh));
+    background-image: linear-gradient(to top, rgb(191,49,43),rgb(164,41,35));
+    border-radius: min(5vw,5vh);
+}
+
+.name{
+    position: absolute;
+    font-size: 1.5em;
+    margin:0;
+}
+
+.first{
+    bottom:25px;
+    right:0
+}
+
+.last{
+    bottom:0;
+    right:0
+}
+
+@keyframes float-1{
+    from{
+        bottom:5vh;
+    }
+    to{
+        bottom:8vh;
+    }
+}
+
+@keyframes pull-up{
+    from{
+        top:0;
+    }
+    to{
+        top:-20vh;
+    }
+}
+
+@keyframes pull-down{
+    from{
+        bottom:0;
+    }
+    to{
+        bottom:-20vh;
+    }
+}

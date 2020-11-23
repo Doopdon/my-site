@@ -59,6 +59,8 @@ body{
 }
 
 .big{
+    animation-name: float-up-big;
+    animation-duration: 3s; 
     top:30vh;
     left:calc(50vw - 20vh);
     width:40vh;
@@ -66,7 +68,9 @@ body{
 }
 
 .small{
-    top:65vh;
+    animation-name: float-up-small;
+    animation-duration: 3s;
+    top:60vh;
     right:calc(7vw - 5vh);
     right:7vw;
     width:10vh;
@@ -88,3 +92,39 @@ svg{
     left:0;
     bottom:0;
 }
+
+
+.fade-in{
+    animation-name: fade-in;
+    animation-duration: 3s;
+}
+
+@keyframes fade-in {
+    from {
+        font-size: 2em;
+        filter:blur(10px)
+    }
+    to {
+        font-size: 1em;
+        filter:blur(0px)
+    }
+}
+
+@keyframes float-up-big {
+    from {
+        top:50vh;
+    }
+    to {
+        top:30vh;
+    }
+}
+
+@keyframes float-up-small {
+    from {
+        top:80vh;
+    }
+    to {
+        top:60vh;
+    }
+}
+

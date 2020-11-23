@@ -4,7 +4,7 @@ class MainPage extends React.Component{
     }
     render(){
         return <div>
-           <h1>This is a simple single page application, that shows off features of react that I have an understanding of. The are:</h1>
+           <p>This is a simple single page application, that shows off features of react that I have an understanding of. The are:</p>
            <ul>
                <li>Components</li>
                <li>State</li>

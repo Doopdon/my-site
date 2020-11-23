@@ -22,7 +22,7 @@ var MainPage = function (_React$Component) {
                 "div",
                 null,
                 React.createElement(
-                    "h1",
+                    "p",
                     null,
                     "This is a simple single page application, that shows off features of react that I have an understanding of. The are:"
                 ),

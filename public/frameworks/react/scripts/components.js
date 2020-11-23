@@ -16,35 +16,40 @@ var Components = function (_React$Component) {
     }
 
     _createClass(Components, [{
-        key: "render",
+        key: 'render',
         value: function render() {
             return React.createElement(
-                "div",
-                null,
+                'div',
+                { id: 'components' },
                 React.createElement(
-                    "h1",
-                    null,
-                    "Components are the easiest to understand"
+                    'h3',
+                    { className: 'title' },
+                    'Components'
                 ),
                 React.createElement(
-                    "h2",
+                    'p',
                     null,
-                    "Components are classes or functions that return a react element "
+                    'Components are the easiest to understand'
                 ),
                 React.createElement(
-                    "h2",
+                    'p',
                     null,
-                    "the syntax looks like html, using \"\uFE64/\uFE65\" (By the way these are unicode characters \"\uFE64/\uFE65\" so I do not get compile errors)"
+                    'Components are classes or functions that return a react element '
                 ),
                 React.createElement(
-                    "h2",
+                    'p',
                     null,
-                    "You can simply write html and then return it to create a component example:"
+                    'the syntax looks like html, using "\uFE64/\uFE65"'
                 ),
                 React.createElement(
-                    "p",
+                    'p',
                     null,
-                    "function Welcome(props) \u2774 return \uFE64h1\uFE65Hello, \u2774props.name\u2775\uFE64/h1\uFE65; \u2775"
+                    'You can simply write html and then return it to create a component example:'
+                ),
+                React.createElement(
+                    'div',
+                    { className: 'code' },
+                    'function Welcome(props) \u2774 return \uFE64h1\uFE65Hello, \u2774props.name\u2775\uFE64/h1\uFE65; \u2775'
                 )
             );
         }
@@ -52,3 +57,5 @@ var Components = function (_React$Component) {
 
     return Components;
 }(React.Component);
+
+export default Components;

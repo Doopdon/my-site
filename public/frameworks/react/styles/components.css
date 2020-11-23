@@ -1,0 +1,13 @@
+#components .code{
+    font-family: "Courier New", Courier, monospace;
+    color:white;
+    background-color: black;
+    padding:2px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 80vw;
+}
+
+#components{
+  
+}

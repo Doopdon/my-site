@@ -1,176 +1,181 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="UTF-8">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles/base.css">
-<link rel="stylesheet" href="styles/pancake.css">
-<link rel="stylesheet" href="styles/background.css">
-<link rel="stylesheet" href="styles/infobox.css">
-<link rel="stylesheet" href="styles/name-animation.css">
-<link rel="stylesheet" href="styles/intro.css">
-<link rel="stylesheet" href="styles/nav-bar.css">
-<link rel="stylesheet" href="styles/about-me.css">
+    <link rel="stylesheet" href="styles2/base.css">
+    <link rel="stylesheet" href="styles2/overlay.css">
+    <link rel="stylesheet" href="styles2/backgrounds.css">
+    <link rel="stylesheet" href="styles2/about-me.css">
+    <link rel="stylesheet" href="styles2/projects.css">
+    <link rel="stylesheet" href="styles2/experience.css">
+    <link rel="stylesheet" href="styles2/education.css">
+    <link rel="stylesheet" href="styles2/contact.css">
+    
 </head>
 <body>
-    <div class='nav-bar'>
-        <div><a>About Me</a></div>
-        <div><a>Contact</a></div>
-        <div><a>Skills</a></div>
-        <div><a>References</a></div>
-    </div>
-    <div class='intro-background'>
-        <div class='into'>
-            <div class='left-side'>
-                <div class='name-container'>
-                    <div class='first name'>Gannon</div>
-                    <div class='last name'>Huiting</div>
-                </div>
-            </div>
-            <!-- <div class='right-side'>
-                <div class='info-box'>
-                    <h1>Framework demos</h1>
-                    <a href="/frameworks/react/react-demo.html" class='skill-button'>
-                        React
-                    </a>
-                    <a href="/frameworks/vue/vue.html" class='skill-button'>
-                        Vue
-                    </a>
-                    <a href="/previous-works/css-animations.html" class='skill-button'>
-                        Angular (coming soon)
-                    </a>
-                    <h3>Previous Works</h3>
-                    <a href="/previous-works/css-animations.html" class='skill-button'>
-                        Svg Animations
-                    </a>
-                </div>
-            </div> -->
+    <div id='overlay'>
+        <div class='nav-bar'>
+            <div class='link-wrapper'><div id='about-me-link' class='bar-item'>ABOUT</div></div>
+            <div class='link-wrapper'><div id='projects-link' class='bar-item'>PROJECTS</div></div>
+            <div class='link-wrapper'><div id='experience-link' class='bar-item'>EXPERIENCE</div></div>
+            <div class='link-wrapper'><div id='education-link' class='bar-item'>EDUCATION</div></div>
+            <div class='link-wrapper'><div id='contact-link' class='bar-item'>CONTACT</div></div>
         </div>
     </div>
-    <div id='about-me'>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    <div class='image-wrapper big-blue-bear'>
+        <div class='image-caption name'>GANNON HUITING</div>
     </div>
-
-    </div>
-
-    <div class='about-me'>
-        <div class='education section'>
-            <div class='title-wrapper'>
-                <a class='title' href='https://www.cs.ksu.edu/'>Kansas State University</a>
+    <div id='about-me' class='section'>
+        <div class='content'>
+            <div class='title-wrapper'><h3>ABOUT ME</h3></div>
+            <p>I am a Denver based developer with a love of front end programming. (even though I am relatively new to it)</p>
+            <p>I graduated from Kansas state university in 2016. I started my carer working in integration. It was there I learned how to work with web technologies mostly web apis and web sockets. My skills with web technologies grew when I worked with richmond homes, there I learned how to work with actual front end technologies like jquery and bootstrap and worked extensively with javascript, working for SSP I learned angular, and typescript</p>
+            <p>I have worked with several individuals to make websites in my free time. I find working with individuals to make websites gives me much more freedom to learn new technologies there I learned angular, and scss, as well as figuring out how to design websites from scratch.</p>
+            <p>I have a good understanding of the following:</p>
+            <div class='skill-wrapper'>
+                <ul class='skills'>
+                    <li>C#</li>
+                    <li>SQL</li>
+                    <li>Github</li>
+                </ul>
+                <ul class='skills'>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>Javascript</li>
+                </ul>
+                <ul class='skills'>
+                    <li>SCSS</li>
+                    <li>React</li>
+                    <li>Angular</li>
+                </ul>
             </div>
-            <p>I was originally a physics major in my sophomore year of college, but I was required to take a programming class as part of my degree</p>
-            <p>I found I was far more proficient at programming than I was at quantum physics so I switched majors. I was still able to complete the 4 year degree in 3 and a half years</p>
         </div>
-        <div class='skills section'>
-            <a>C#</a>
-            <a>.Net MVC</a>
-            <a>Javascript</a>
-            <a>HTML</a>
-            <a>CSS</a>
-            <a>Angular</a>
-            <a>React</a>
-            <a>Vue</a>
-        </div>
-        <div class='work-xp section'>
-            <div class='title-wrapper'>
-                <a class='title'>SSP Innovations: Developer</a>
-                <a class='sub-title'>Jan 2020 - July 2020</a>
-            </div>
-            <p class='description'>SSP innovations is an up and coming application development company, for utility companies.</p>
-            <p class='description'>I learned how to use Angular JS and ARC- GIS. I also gained professional experience in typescript and more experience in javascript</p>
-            <p class='description'>Unfortunately Covid hurt sales and only the most critical personal could be retained</p>
-            <div class='title-wrapper'>
-                <a class='title'>MDC Holdings: Developer</a>
-                <a class='sub-title'>2018 - 2019</a>
-            </div>
-            <p class='description'>MDC Holdings is a home construction and sales company.</p>
-            <p class='description'>I really started to learn javascript and MVC as well as continue to refine my C# and SQL Skills</p>
-            <p class='description'>I started looking for more rewarding that would use more of my skills. I then found SSP innovations</p>
-            <div class='title-wrapper'>
-                <a class='title'>Jefco Schools: Developer</a>
-                <a class='sub-title'>2016 - 2017</a>
-            </div>
-            <p class='description'>I worked for the school district of jefferson county.</p>
-            <p class='description'>I was much ore able to </p>
-            <p class='description'>I worked for the school district of jefferson county.</p>
-            <div class='title-wrapper'>
-                <a class='title'>Kasnas State: CIS 300 TA</a>
-                <a class='sub-title'>2016</a>
-            </div>
-            <p class='description'></p>
-            <div class='title-wrapper'>
-                <a class='title'>Advise Technologies: Intern Developer</a>
-                <a class='sub-title'>2014 - 2015</a>
-            </div>
-            <p class='description'></p>
-        </div>
-        <div class='projects section'>
-            I do projects when I am board
+        <div class='profile-pic'>
+            <img src='/images/happy-dude-striped-top-glasses-260nw-1153500823.webp'>
         </div>
     </div>
-    <div id='demos'>
-
+    <div class='image-wrapper dia'>
+        <div class='image-caption'>EXPERIENCE</div>
     </div>
-
-    <h3>So here are some examples of things I can do</h3>
-
-    <div class="spacer"></div>
-    <h3 class='skill-title'>Pancake Image links</h3>
-    <p class='skill-description'>Here are 3 images that serve as links to other pages, They are responsive, and automatically stack in an esthetic way.</p>
-    <div class='pancake-links' id='to-clone-to'>
-        <a href='/' class='link-container'>
+    <div id='experience' class='section'>
+        <div class='title-wrapper'><h3>EXPERIENCE</h3></div>
+        <div class='job'>
+            <div class='job-title-wrapper'>
+                <div class='job-title'><h4>DEVELOPER</h4></div>
+                <div class='company'>SSP Innovations</div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class='job'>
+            <div class='job-title-wrapper'>
+                <div class='job-title'><h4>DEVELOPER</h4></div>
+                <div class='company'>SSP Innovations</div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class='job'>
+            <div class='job-title-wrapper'>
+                <div class='job-title'><h4>DEVELOPER</h4></div>
+                <div class='company'>SSP Innovations</div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+    <div class='image-wrapper denver-wide'>
+        <div class='image-caption'>PROJECTS</div>
+    </div>
+    <div id='projects' class='section'>
+        <div class='title-wrapper'><h3>PROJECTS</h3></div>
+        <div class='project underline'>
             <div class='image-container'>
-                <img src='images/roses.jpg'>
+                <img src='images/project-images/logo.png'>
             </div>
-            <p>Pink Flowers</p>
-        </a>
-        <a href='/' class='link-container'>
+            <div class='description'>
+                <div class='title-wrapper'><h5>Silver Lake Lodge</h5></div>
+                <p>I was asked to make a simple website for a small bed and breakfast. I simply made it minimalist and mobile freindly</p>
+                <p><a>Before</a> <a>After</a></p>
+            </div>
+        </div>
+        <div class='project underline'>
+            <div class='description'>
+                <div class='title-wrapper'><h5>Richmond American Homes</h5></div>
+                <p>I was asked to create a filtering process that would work exclusively on the front end. (did not require server side processing) Here is the result. You can use the "advanced search" button and you will notice not delay when entering terms. </p>
+            </div>
             <div class='image-container'>
-                <img src='images/tulips.jpg'>
+                <img src='images/project-images/house-search.png'>
             </div>
-            <p>Tulips</p>
-        </a>
-        <a href='/' class='link-container' id='to-clone'>
+        </div>
+        <div class='project'>
             <div class='image-container'>
-                <img src='images/yellow-roses.jpg'>
+                <img src='images/project-images/connected-graph.png'>
             </div>
-            <p>Yellow Flowers</p>
-        </a>
-    </div>
-    <div>
-        <p>A few details to note:</p>
-        <p>-The images get bigger when you hover over them, so does the shadow.</p>
-        <p>-The images get bigger without shifting the elements around it. It stays contained. </p>
-        <p>-The text under each image still acts as a link, but does not have the default blue underline of a link</p>
-        <p>-Also know that this is in no way limited to 3 images, if you zoom out and add a new image, it will dynamically react <button onclick="addNewImage()">Add image</button></p>
-    </div>
-    <script>
-        //A very quick function to add an element to the end of the pancake menu.
-        function addNewImage(){
-            var $elem = document.getElementById('to-clone').cloneNode(true);
-            document.getElementById('to-clone-to').appendChild($elem);
-        }
-    </script>
-
-    <div class='background-window background-1'>
-        <div class='window-content'>
-            <p>There is Beauty in Simplicity</p>
+            <div class='description'>
+                <div class='title-wrapper'><h5>Trac3</h5></div>
+                <a>This is a project I did on my own. I was frustrated with the ridgitity and complexety of view engines like Angular, React and Vue so I made my own, based on react, but not requring transpiling or a ridged class stucture</a>
+            </div>
+            
         </div>
     </div>
-    <div class='spacer'></div>
-    <div class='background-window background-2'>
-        <div class='window-content'>
-            <p>Be What you Seek</p>
+    <div class='image-wrapper denver-wide'>
+        <div class='image-caption'>Demos</div>
+    </div>
+    <div id='projects' class='section'>
+        <div class='title-wrapper'><h3>Demos</h3></div>
+        <div class='project underline'>
+            <div class='image-container'>
+                <a href='/frameworks/react/react-demo.html'>
+                    <img src='images/project-images/react.png' >
+                </a>
+            </div>
+            <div class='description'>
+                <div class='title-wrapper'><h5>Angular</h5></div>
+                <p>I made a simple react app (its still in its early stages, but I plan on adding more in the comming weeks) you can view it <a href='/frameworks/react/react-demo.html'>here</a></a></p>
+            </div>
+        </div>
+        <div class='project underline'>
+            <div class='description'>
+                <div class='title-wrapper'><h5>Richmond American Homes</h5></div>
+                <p></p>
+                <a>Here is a simple Todo app in View (more to come in the following days)</a>
+            </div>
+            <div class='image-container'>
+                <a href='/frameworks/vue/vue.html'>
+                    <img src='images/project-images/vue.png'>
+                </a>
+            </div>
         </div>
     </div>
-    <div class='spacer'></div>
-    <div class='background-window background-3'>
-        <div class='window-content'>
-            <p>Flowers Smell Good</p>
+    <div class='image-wrapper mountains'>
+        <div class='image-caption'>EDUCATION</div>
+    </div>
+    <div id='education' class='section'>
+        <div class='title-wrapper'><h3>EDUCATION</h3></div>
+        <div class='school'>
+        </div>
+        <h5>Early</h5>
+        <p>I started off as a physics major for my first 2 years. I found physics facenating but stuggled to understand the concepts and particularly the math behind it. It was frustrating to see peers succeeding effortlessly where I struggled</p>
+        <h5>The switch</h5>
+        <p>But part of my physics corriculm involved a computer science class. which was my first accedemic introduction to programming. I found I was especial good at it. completeing work and expanindng on capibilities before anyone else and it only took 2 weeks before I switched majors and started down a new path</p>
+        <h5>Completion</h5>
+        <p>Many fall victem to the sunk cost falasy. But it important to remember that you are not beholden to your past self. And even though I had to start from scratch I still mannaged to excell in each computer class and even graduate a semester ahead of schedule</p>
+    </div>
+    <div class='image-wrapper mountains'>
+        <div class='image-caption'>CONTACT</div>
+    </div>
+    <div id='contact' class='section'>
+        <div class='title-wrapper'><h3>Contact info</h3></div>
+        <div class='contact-method'>
+            <a>Phone:</a>
+            <a>720.318.5814</a>
+        </div>
+        <div class='contact-method'>
+            <a>Email:</a>
+            <a>720.318.5814</a>
+        </div>
+        <div class='contact-method'>
+            <a>Linked in:</a>
+            <a>720.318.5814</a>
         </div>
     </div>
+    <script src='scripts/scrollTo.js'></script>
 </body>
 </html>
