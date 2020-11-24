@@ -16,33 +16,33 @@ var MainPage = function (_React$Component) {
     }
 
     _createClass(MainPage, [{
-        key: "render",
+        key: 'render',
         value: function render() {
             return React.createElement(
-                "div",
-                null,
+                'div',
+                { id: 'main-page' },
                 React.createElement(
-                    "p",
-                    null,
-                    "This is a simple single page application, that shows off features of react that I have an understanding of. The are:"
+                    'p',
+                    { 'class': 'description' },
+                    'This is a simple single page application, that shows off features of react that I have an understanding of.'
                 ),
                 React.createElement(
-                    "ul",
-                    null,
+                    'div',
+                    { 'class': 'link-buttons' },
                     React.createElement(
-                        "li",
-                        null,
-                        "Components"
+                        'div',
+                        { className: 'link-button' },
+                        'Components'
                     ),
                     React.createElement(
-                        "li",
-                        null,
-                        "State"
+                        'div',
+                        { className: 'link-button' },
+                        'State'
                     ),
                     React.createElement(
-                        "li",
-                        null,
-                        "Other Stuff"
+                        'div',
+                        { className: 'link-button' },
+                        'Optimization'
                     )
                 )
             );

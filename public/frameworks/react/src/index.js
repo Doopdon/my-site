@@ -34,8 +34,10 @@ class Index extends React.Component{
 
     render(){
         return <div>
-            <button onClick={this.prev}>Previous page</button>
-            <button onClick={this.next}>Next page</button>
+            <div className='nav'>
+                <button className='next button' onClick={this.prev}>Previous page</button>
+                <button className='prev button' onClick={this.next}>Next page</button>
+            </div>
             {this.setPage(this.state.page)}
         </div>
     }

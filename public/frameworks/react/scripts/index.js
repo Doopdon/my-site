@@ -51,14 +51,18 @@ var Index = function (_React$Component) {
                 'div',
                 null,
                 React.createElement(
-                    'button',
-                    { onClick: this.prev },
-                    'Previous page'
-                ),
-                React.createElement(
-                    'button',
-                    { onClick: this.next },
-                    'Next page'
+                    'div',
+                    { className: 'nav' },
+                    React.createElement(
+                        'button',
+                        { className: 'next button', onClick: this.prev },
+                        'Previous page'
+                    ),
+                    React.createElement(
+                        'button',
+                        { className: 'prev button', onClick: this.next },
+                        'Next page'
+                    )
                 ),
                 this.setPage(this.state.page)
             );

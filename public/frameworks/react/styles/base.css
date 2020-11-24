@@ -1,4 +1,30 @@
 *{box-sizing: border-box;}
 body{
     margin:0;
+    font: 525 15px/1.5 'Lato', sans-serif;
+    letter-spacing: 2px;
+}
+
+.nav{
+    background-color: grey;
+    width:100vw;
+    height:calc(10vh + 50px);
+}
+
+.nav .button{
+    margin:5vh;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    position: absolute;
+    top:0;
+    background-color: rgb(32, 178, 39);
+}
+
+.nav .prev{
+    right:0;
+}
+
+.nav .next{
+    left:0;
 }
