@@ -1,0 +1,9 @@
+#state-demo .state-box{
+    width: 50vw;
+    height: 10vh;
+}
+
+#state-demo .state-p a{
+    color: blue;
+    font-weight: 800;
+}

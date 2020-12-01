@@ -18,31 +18,39 @@ var MainPage = function (_React$Component) {
     _createClass(MainPage, [{
         key: 'render',
         value: function render() {
+            var _this2 = this;
+
             return React.createElement(
                 'div',
-                { id: 'main-page' },
+                { id: 'main-page', className: 'page-container' },
                 React.createElement(
                     'p',
-                    { 'class': 'description' },
-                    'This is a simple single page application, that shows off features of react that I have an understanding of.'
+                    { className: 'description' },
+                    'This is a simple react single page app demo. It contains demonstrations of:'
                 ),
                 React.createElement(
                     'div',
-                    { 'class': 'link-buttons' },
+                    { className: 'link-buttons' },
                     React.createElement(
                         'div',
-                        { className: 'link-button' },
+                        { className: 'link-button', onClick: function onClick() {
+                                return _this2.props.goTo('components');
+                            } },
                         'Components'
                     ),
                     React.createElement(
                         'div',
-                        { className: 'link-button' },
+                        { className: 'link-button', onClick: function onClick() {
+                                return _this2.props.goTo('state');
+                            } },
                         'State'
                     ),
                     React.createElement(
                         'div',
-                        { className: 'link-button' },
-                        'Optimization'
+                        { className: 'link-button', onClick: function onClick() {
+                                return _this2.props.goTo('props');
+                            } },
+                        'props'
                     )
                 )
             );
@@ -51,3 +59,5 @@ var MainPage = function (_React$Component) {
 
     return MainPage;
 }(React.Component);
+
+export default MainPage;

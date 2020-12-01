@@ -29,6 +29,27 @@
     background-image: url("/images/mountain-sun-set.jpg");
 }
 
+.image-wrapper.denver-art-museum{
+    background-image: url('/images/backgrounds/art-museum.jpg');
+}
+
+.image-wrapper.denver-skyline{
+    background-image: url('/images/backgrounds/denver-skyline.jpg');
+}
+
+.image-wrapper.platte-river{
+    background-image: url('/images/backgrounds/platte-river.jpg');
+}
+
+.image-wrapper.cheesman-park{
+    background-image: url('/images/backgrounds/cheesman-park.png');
+}
+
+
+.image-wrapper.city-park{
+    background-image: url('/images/backgrounds/city-park.jpg');
+}
+
 .image-wrapper .image-caption{
     padding: 1vw;
     color: white;

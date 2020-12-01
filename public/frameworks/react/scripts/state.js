@@ -20,7 +20,7 @@ var State = function (_React$Component) {
         _this.state = { name: 'Gannon', date: '1991', list: ['red', 'turnip', 'snow', 'quantum entanglement'] };
         var defaultVal = JSON.stringify(_this.state);
         _this.update = _this.update.bind(_this);
-        _this.textArea = React.createElement('textarea', { defaultValue: defaultVal, onChange: _this.update });
+        _this.textArea = React.createElement('textarea', { className: 'state-box', defaultValue: defaultVal, onChange: _this.update });
         return _this;
     }
 
@@ -41,26 +41,44 @@ var State = function (_React$Component) {
         value: function render() {
             return React.createElement(
                 'div',
-                null,
+                { id: 'state-demo', className: 'page-container' },
                 React.createElement(
                     'h1',
                     null,
                     'State'
                 ),
                 React.createElement(
-                    'h2',
+                    'p',
                     null,
                     'State allows you to tie data objects to the view. This stops the need for multiple updates to multiple elements when you change an object'
                 ),
                 React.createElement(
                     'p',
                     null,
-                    'State is simply an object that react uses to build components, when the object changes the components are re-rendered'
+                    'State is simply an object that react uses to build components, when the object changes the components are changed'
                 ),
                 React.createElement(
                     'p',
-                    null,
-                    'Here I have a json object that defines a name, a date and a list, feel free to change it, when you hit "update" the state will be set to the new object'
+                    { className: 'state-p' },
+                    'Here I have a json object that defines a name with a value of ',
+                    React.createElement(
+                        'a',
+                        null,
+                        this.state.name
+                    ),
+                    ', a date, in this case ',
+                    React.createElement(
+                        'a',
+                        null,
+                        this.state.date
+                    ),
+                    ' and a list with ',
+                    React.createElement(
+                        'a',
+                        null,
+                        this.state.list.length
+                    ),
+                    ' in it, feel free to change it, you will see it reflected in the various elements'
                 ),
                 this.textArea,
                 React.createElement(
@@ -92,3 +110,5 @@ var State = function (_React$Component) {
 
     return State;
 }(React.Component);
+
+export default State;

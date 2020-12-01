@@ -1,8 +1,20 @@
-#main-page{
-    padding:10vw;
-}
+
 
 #main-page .description{
     width:80vw;
+    font-size: 1.5em;
     margin: 0 auto 0 auto;
+}
+
+#main-page .link-buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+#main-page .link-button{
+    border-radius: 5px;
+    background-color: grey;
+    padding:10px;
+    margin:2vw;
+    cursor: pointer;
 }

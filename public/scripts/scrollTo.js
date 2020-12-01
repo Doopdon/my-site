@@ -1,5 +1,5 @@
 (function(){
-    ['about-me','projects','experience','education','contact'].forEach(function(name){
+    ['about-me','projects','experience','demos','contact'].forEach(function(name){
         document.getElementById(name+'-link').onclick = function(){scrollTo(name)};
     });
     function scrollTo(elemId){

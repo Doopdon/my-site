@@ -3,18 +3,17 @@ class Components extends React.Component{
         super(props);
     }
     render(){
-        return <div id='components'>
+        return <div id='components' className='page-container'>
             <h3 className='title'>Components</h3>
-            <p>Components are the easiest to understand</p>
-            <p>Components are classes or functions that return a react element </p>
-            <p>the syntax looks like html, using "﹤/﹥"</p>
+            <p>Components are the base unit of a react application</p>
+            <p>Components are a set of code that creates an element. This creates reusable building blocks that react can make web pages from</p>
+            <p>the syntax looks similar to html, using "﹤/﹥"</p>
             <p>You can simply write html and then return it to create a component example:</p>
             <div className='code'>
             function Welcome(props) ❴
                 return ﹤h1﹥Hello, ❴props.name❵﹤/h1﹥;
             ❵
             </div>
-
         </div>
     }
 }

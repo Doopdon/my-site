@@ -20,7 +20,7 @@ var Components = function (_React$Component) {
         value: function render() {
             return React.createElement(
                 'div',
-                { id: 'components' },
+                { id: 'components', className: 'page-container' },
                 React.createElement(
                     'h3',
                     { className: 'title' },
@@ -29,17 +29,17 @@ var Components = function (_React$Component) {
                 React.createElement(
                     'p',
                     null,
-                    'Components are the easiest to understand'
+                    'Components are the base unit of a react application'
                 ),
                 React.createElement(
                     'p',
                     null,
-                    'Components are classes or functions that return a react element '
+                    'Components are a set of code that creates an element. This creates reusable building blocks that react can make web pages from'
                 ),
                 React.createElement(
                     'p',
                     null,
-                    'the syntax looks like html, using "\uFE64/\uFE65"'
+                    'the syntax looks similar to html, using "\uFE64/\uFE65"'
                 ),
                 React.createElement(
                     'p',
