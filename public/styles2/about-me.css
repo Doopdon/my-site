@@ -27,3 +27,17 @@
     display: flex;
     flex-direction: row;
 }
+
+@media only screen and (max-width: 600px) {
+    #about-me{
+        flex-direction: column;
+    }
+
+    #about-me .content{
+        width: 100%;
+    }
+    
+    #about-me .profile-pic{
+        margin: 0 auto;
+    }
+}
