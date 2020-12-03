@@ -1,0 +1,7 @@
+.pancake .art-sample{
+    width: max(20vw, 200px);
+}
+
+.pancake .art-sample img{
+    width: max(20vw, 200px);
+}
