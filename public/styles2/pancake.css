@@ -1,7 +1,35 @@
-.pancake .art-sample{
-    width: max(20vw, 200px);
+
+.pancake{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.pancake .art-sample img{
-    width: max(20vw, 200px);
-}
+.pancake .art-sample{
+    margin: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: grid;
+    width: 25vw;
+    min-width: 300px;
+    transition: .5s;
+  }
+
+  
+  .pancake .art-sample .image-link{
+    padding:5px;
+    transition: .2s;
+  }
+  
+  .pancake .art-sample:hover .image-link{
+    padding:0px;
+    transition: .2s;
+  }
+  
+  .pancake .image-link img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  
