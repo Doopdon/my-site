@@ -22,23 +22,23 @@ function makeSnowFlake(){
 }
 
 function makeSnowflake2(size,pos){
-    if(size < .5) return;
     let flake$ = document.createElement('div');
     flake$.classList.add('snowflake');
     let style = '';
     let baseSize = 5;
     let baseDuration =  32;
+    let pxSize = baseSize*size*size;
     style+=`left:${pos}%;`;
-    style+=`width:${baseSize*size*size}px;`;
-    style+=`height:${baseSize*size*size}px;`;
-    style+=`top:-${baseSize*size*size}px;`;
+    style+=`width:${pxSize}px;`;
+    style+=`height:${pxSize}px;`;
+    style+=`top:-${pxSize}px;`;
     style+=`animation: falling linear;`;
     style+=`animation-duration:${baseDuration/(size*size)}s;`;
     style+=`filter: blur(${size-2}px);`
     if(size > 3.5){
         style+=`z-index: 10;`;
     }
-    if(size < 1.2){
+    if(size < 1.3){
         style+=`background-image: none; border-radius:50%; background-color:white;`;
     }
     flake$.style = style;
@@ -60,7 +60,7 @@ function makeSnowflake2(size,pos){
 // }
 
 function rand2(num){
-    return (1-Math.sqrt(1-Math.random()))*num;
+    return (1-Math.sqrt(1-Math.random()))*num + 1;
 }
 
 function rand(num){
