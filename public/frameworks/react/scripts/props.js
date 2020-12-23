@@ -8,6 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+////npx babel --watch src --out-dir scripts --presets react-app/prod
 var propDemo = ['new thing', 'another thing', 'i am running out of things', 'im going to start numbering'];
 var ind = 0;
 
@@ -19,26 +20,30 @@ var MainPage = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (MainPage.__proto__ || Object.getPrototypeOf(MainPage)).call(this, props));
 
-        _this.state = ['my-prop-value'];
+        _this.state = { list: [] };
         _this.add = _this.add.bind(_this);
+        _this.index = 0;
         return _this;
     }
 
     _createClass(MainPage, [{
         key: 'add',
         value: function add() {
-            this.setState([].concat(_toConsumableArray(this.state), [propDemo[ind++] || ind]));
+            ind++;
+            this.setState({ list: [].concat(_toConsumableArray(this.state.list), [propDemo[ind] || ind]) });
         }
     }, {
         key: 'render',
         value: function render() {
+            var _this2 = this;
+
             return React.createElement(
                 'div',
                 { className: 'page-container' },
                 React.createElement(
                     'p',
                     null,
-                    'props are fairly easy to understand. Simply to add a prop simply add it like an attribute.'
+                    'props are fairly easy to understand. To add a prop simply add it like an attribute.'
                 ),
                 React.createElement(
                     'div',
@@ -62,9 +67,12 @@ var MainPage = function (_React$Component) {
                 ),
                 React.createElement(
                     'button',
-                    null,
+                    { onClick: this.add },
                     'Add new component'
-                )
+                ),
+                this.state.list.map(function (item) {
+                    return React.createElement(DemoComp, { MyProp: item, key: _this2.index++ });
+                })
             );
         }
     }]);
@@ -82,8 +90,8 @@ var DemoComp = function (_React$Component2) {
     }
 
     _createClass(DemoComp, [{
-        key: 'return',
-        value: function _return() {
+        key: 'render',
+        value: function render() {
             return React.createElement(
                 'div',
                 null,

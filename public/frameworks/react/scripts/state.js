@@ -60,7 +60,7 @@ var State = function (_React$Component) {
                 React.createElement(
                     'p',
                     { className: 'state-p' },
-                    'Here I have a json object that defines a name with a value of ',
+                    'Here I have a JSON object that defines a name with a value of ',
                     React.createElement(
                         'a',
                         null,
@@ -78,31 +78,35 @@ var State = function (_React$Component) {
                         null,
                         this.state.list.length
                     ),
-                    ' in it, feel free to change it, you will see it reflected in the various elements'
+                    ' items in it. Feel free to change it, you will see it reflected in the various elements'
                 ),
                 this.textArea,
                 React.createElement(
-                    'h2',
-                    null,
-                    'Name:',
-                    this.state.name
-                ),
-                React.createElement(
-                    'h2',
-                    null,
-                    'Date:',
-                    this.state.date
-                ),
-                React.createElement(
-                    'ul',
-                    null,
-                    this.state.list.map(function (item, i) {
-                        return React.createElement(
-                            'li',
-                            { key: i },
-                            item
-                        );
-                    })
+                    'div',
+                    { 'class': 'state-display' },
+                    React.createElement(
+                        'h2',
+                        null,
+                        'Name:',
+                        this.state.name
+                    ),
+                    React.createElement(
+                        'h2',
+                        null,
+                        'Date:',
+                        this.state.date
+                    ),
+                    React.createElement(
+                        'ul',
+                        null,
+                        this.state.list.map(function (item, i) {
+                            return React.createElement(
+                                'li',
+                                { key: i },
+                                item
+                            );
+                        })
+                    )
                 )
             );
         }

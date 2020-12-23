@@ -12,10 +12,13 @@
         <ol>
           <li v-for="todo in todos">
             {{ todo.text }}
+            <button v-if="todo.editOn">Save</button>
+            <button v-else v-on:click="editTodo(todo.id)">Edit</button>
+            <button v-on:click="delTodo(todo.id)">Delete</button>
           </li>
         </ol>
         <input v-model="newTodo.text">
-        <button onclick="addTodo()">Add todo</button>
+        <button v-on:click="addTodo()">Add todo</button>
       </div>
 </body>
 <script src='/frameworks/vue/scripts/vue-base.js'></script>

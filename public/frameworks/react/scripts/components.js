@@ -34,17 +34,17 @@ var Components = function (_React$Component) {
                 React.createElement(
                     'p',
                     null,
-                    'Components are a set of code that creates an element. This creates reusable building blocks that react can make web pages from'
+                    'Components are a set of code that creates an element. This creates reusable building blocks that React can make web pages from.'
                 ),
                 React.createElement(
                     'p',
                     null,
-                    'the syntax looks similar to html, using "\uFE64/\uFE65"'
+                    'the syntax looks similar to the html characters "\uFE64/\uFE65" '
                 ),
                 React.createElement(
                     'p',
                     null,
-                    'You can simply write html and then return it to create a component example:'
+                    'You can simply write html and then return it to create a component. example:'
                 ),
                 React.createElement(
                     'div',
