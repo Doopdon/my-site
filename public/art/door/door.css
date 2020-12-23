@@ -1,0 +1,138 @@
+*{box-sizing: border-box;}
+body{
+    margin:0;
+}
+
+.background{
+    background-color:black;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.door-container{
+    width: 30vh;
+    height: 48vh;
+    box-shadow: 0 0 20px white;
+    position: relative;
+}
+
+.door{
+    background-color: black;
+    color: white;
+    width:51%;
+    height: 100%;
+    margin-left: 50%;
+}
+
+.behind{
+    background-color: white;
+    color: black;
+}
+
+.inner.swing{
+    width: 200%;
+    left:-100%;
+    animation: open-door linear alternate infinite;
+    animation-duration: 3s;
+}
+
+.inner{
+    top:0;
+    position: absolute;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 8vh;
+    width: 100%;
+    height: 100%;
+}
+
+.text-container{
+    position: absolute;
+    width: 30vh;
+    height: 48vh;
+}
+
+.text{
+    position: absolute;
+    width: 30vh;
+    height: 48vh;
+    font-size:5vh;
+    text-align: center;
+}
+
+.text div{
+    padding: 10px;
+}
+
+.white{
+    overflow:hidden;
+    /* animation: transition cubic-bezier(0.71, -0.25, 1, 1) infinite; */
+    animation: transition linear alternate infinite;
+    transition-timing-function: ease-in-out;
+    animation-duration: 3s;
+}
+
+.white div{
+    color:white;
+    width: 30vh;
+    height: 48vh;
+    display: grid;
+    place-items: center;
+}
+
+.black div{
+    color:black;
+    width: 30vh;
+    height: 48vh;
+    display: grid;
+    place-items: center;
+}
+
+
+
+/* .white-text{
+    position: absolute;
+    top:0;
+    color:white;
+    overflow: hidden;
+    width:50px;
+}
+
+.white-text div{
+    width:30vh;
+    height: 48vh;
+}
+
+.black-text{
+    position: absolute;
+    top:0;
+    color:red;
+} */
+
+@keyframes open-door {
+    0% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(400px) rotateY(-90deg);
+    }
+}
+
+@keyframes transition {
+    0% {
+        width: 30vh;
+    }
+    55%{
+        width: 30vh;
+    }
+    77.5%{
+        width: 16vh;
+    }
+    100% {
+        width: 0vh;
+    }
+}
