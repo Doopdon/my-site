@@ -1,0 +1,78 @@
+body{
+    background-color: black;
+}
+.background{
+    font-family: 'Sacramento', cursive;
+    font-size: 10vh;
+}
+
+.card{
+    width:30vw;
+    height: 30vh;
+    display: inline-block;
+}
+
+.card-red{
+    box-shadow: 0px 0px 10px red;
+}
+.card-blue{
+    box-shadow: 0px 0px 10px blue;
+}
+.card-green{
+    box-shadow: 0px 0px 10px green;
+}
+
+
+
+.glow-red{
+    animation: glow-red linear infinite;
+}
+.glow-blue{
+    animation: glow-blue linear infinite;
+}
+.glow-green{
+    animation: glow-green linear infinite;
+}
+.text.off{
+    text-shadow: none;
+    color:black;
+    animation: none;
+}
+.text{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 10vh;
+    color:white;
+    animation-direction: alternate;
+    animation-duration: .5s;
+}
+
+@keyframes glow-red{
+    0%{
+        text-shadow: 0px 0px 2px white, 0px 0px 20px red;
+    }
+    100%{
+        text-shadow: 0px 0px 3px white, 0px 0px 25px red;
+    }
+}
+
+@keyframes glow-blue{
+    0%{
+        text-shadow: 0px 0px 2px white, 0px 0px 20px blue;
+    }
+    100%{
+        text-shadow: 0px 0px 2px white, 0px 0px 25px blue;
+    }
+}
+
+@keyframes glow-green{
+    0%{
+        text-shadow: 0px 0px 2px white, 0px 0px 20px green;
+    }
+    100%{
+        text-shadow: 0px 0px 2px white, 0px 0px 25px green;
+    }
+}
