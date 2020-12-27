@@ -1,0 +1,29 @@
+*{box-sizing: border-box;}
+body{
+    margin:0;
+    background-color:  rgb(92, 92, 92);
+    text-align: center;
+}
+.part{
+    width: 90vw;;
+    height: 100vh;;
+}
+
+iframe{
+    border:none;
+}
+
+.description{
+    color:white;
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: black;
+    width:90vw;
+    padding:10px;
+}
+
+.container{
+    height: 90hv;
+    overflow: scroll;
+    background-color: rgb(92, 92, 92);
+}

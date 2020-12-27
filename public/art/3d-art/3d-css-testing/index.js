@@ -28,7 +28,6 @@ for( let len = 0; len < childArray.length; len++) {
     }
     
 
-    console.log(len,x,y,z);
     if (childArray[len].nodeType != 1) { continue; } 
     thisObj = childArray[len];
     thisObj.classList.add(colors[c]);

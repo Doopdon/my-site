@@ -1,0 +1,90 @@
+html,body {
+    width:100%;
+    height:100%;
+    background-color:black;
+    
+}
+
+.background{
+  width: 100%;
+  height: 100vh;
+  margin-bottom: -100vh;
+  background-image: url("city.jpeg");
+  filter:blur(5px);
+}
+
+#outer_cube {
+    width:100%;
+    height:100vh;
+    position:relative;
+    transform-style : preserve-3d ;
+    transform: perspective(400px);
+    /* prespective : 500; */
+}
+/* .background{
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background-image: url("city.jpeg");
+  filter:blur(5px);
+  transform-style : preserve-3d;
+  transform: translate3d(10px,10px,-200px)
+} */
+
+#mirror {
+    width:300px;
+    height:300px;
+    position:absolute;
+    border: 10px solid white;
+    top:calc(50% - 150px);
+    left:calc(50% - 150px);
+    transform-style : preserve-3d;
+    animation-name : rotate-full;
+    animation-duration : 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function : linear;
+    overflow: hidden;
+    
+}
+
+.image{
+  height: 100%;
+  width: 200%;
+  margin-left: -50%;
+  border:1px solid yellow;
+  background-image: url("city.jpeg");
+  filter:blur(5px);
+  animation-name : move-image;
+  animation-duration : 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.01, 0.67, 1, 0.31);
+}
+
+@keyframes move-image{
+    0% {
+      transform: translateX(-25%);
+    }
+    50% { 
+      transform: translateX(25%);
+    }
+    100%{
+      transform: translateX(-25%);
+    }
+}
+
+@keyframes rotate-full {
+  0% {
+    background-position:0% 50%;
+    -webkit-transform: rotateY(-80deg);
+  }
+
+  50% {
+    background-position:100% 50%;
+    -webkit-transform: rotateY(80deg);
+  }
+
+  100% {
+    background-position:0% 50%;
+    -webkit-transform: rotateY(-80deg);
+  }
+}
