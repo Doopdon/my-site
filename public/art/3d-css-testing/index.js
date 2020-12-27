@@ -1,6 +1,6 @@
-var childArray = document.getElementsByClassName('inner_object'),
+var childArray = document.getElementsByClassName('inner_object');
 // childArray = cube.childNodes,
- len = childArray.length;
+let len = childArray.length;
 
 let xBase = 40;
 let yBase = 40;
