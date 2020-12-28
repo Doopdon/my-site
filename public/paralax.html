@@ -6,7 +6,9 @@
     <title>A grouped pure CSS parallax demo by Keith Clark</title>
     <meta name="description" content="Demonstration of grouping content in pure CSS parallax scrolling website">
     <link rel="stylesheet" href="styles3/paralax.css">
-    <link rel="stylesheet" href="styles3/info.css">
+    <link rel="stylesheet" href="styles3/about-me.css">
+    <link rel="stylesheet" href="styles3/base.css">
+    <link rel="stylesheet" href="styles3/pancake.css">
     </head>
     
     <body>
@@ -29,46 +31,65 @@
       <div class="parallax">
         <div class="parallax__group base">
           <div class="parallax__layer parallax__layer--base">
+            <div class='spacer-50'></div>
             <div id='about-me' class='section'>
-              <div class='content'>
+              <div class='content-wrapper'>
+                <div class='info'>
                   <div class='title-wrapper'><h3>ABOUT ME</h3></div>
+                  <img class='profile-pic' src='/images/me4.png'> 
                   <p>I am a Denver-based developer with an emerged passion in front end development.</p>
                   <p>I graduated from Kansas State University in 2016. I started my career working in integration; it was there I learned how to work with web technologies mostly web APIs and web sockets. My skills with web technologies grew when I worked with Richmond American Homes, there I learned how to work with front end technologies like Jquery and Bootstrap and worked extensively with javascript, working for SSP I learned angular, and typescript.</p>
                   <p>At SSP innovations I worked mainly on backend projects. However, I also gained experience working as a front end developer and found that is where I was most passionate.</p>
                   <p>After SSP I worked with several individuals to make websites in my free time. I find this type of work gave me much more freedom to learn new technologies. So far I have learned React, SCSS, and Vue, as well as learning how to design websites from the ground up.</p>
                   <p>I have a sufficient understanding of the following:</p>
-                  <div class='skill-wrapper'>
+                  <div class='pancake'>
+                    <div>
                       <ul class='skills'>
-                          <li>C#</li>
-                          <li>SQL</li>
-                          <li>Github</li>
+                        <li>C#</li>
+                        <li>SQL</li>
+                        <li>Github</li>
                       </ul>
+                    </div>
+                    <div>
                       <ul class='skills'>
-                          <li>CSS</li>
-                          <li>HTML</li>
-                          <li>Javascript</li>
-                      </ul>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                        <li>Javascript</li>
+                    </ul>
+                    </div>
+                    <div>
                       <ul class='skills'>
-                          <li>SCSS</li>
-                          <li>React</li>
-                          <li>Angular</li>
-                      </ul>
+                        <li>SCSS</li>
+                        <li>React</li>
+                        <li>Angular</li>
+                    </ul>
+                    </div>
                   </div>
-              </div>
-              <div class='profile-pic'>
-                  <img src='/images/me4.png'>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <!--background layer-->
         <div class="parallax__group back">
           <div class="parallax__layer parallax__layer--back">
-            <div class="title">Background Layer</div>
+            <div class='spacer-50'></div>
+            <div class='spacer-50'></div>
+            <iframe src="/art/3d-art/galaxy/index.html" width="100%" height="100%"></iframe>
+            <!-- <div class="title">Background Layer</div> -->
           </div>
         </div>
+        <!--Deep layer-->
         <div class="parallax__group deep">
           <div class="parallax__layer parallax__layer--deep">
-            <div class="title">Deep Background Layer</div>
+            <link rel="stylesheet" href="deep-bckground/base.css">
+            <div class='frame'>
+              <div class='fade-in'><p>GANNON</p><p>HUITING</p></div>
+              <div class='inner'></div>
+              <div class='moon small'></div>
+              <div class='moon big'></div>
+              <div class='land'></div>
+            </div>
           </div>
         </div>
       </div>

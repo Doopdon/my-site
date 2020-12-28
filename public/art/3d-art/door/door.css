@@ -4,7 +4,7 @@ body{
 }
 
 .background{
-    background-color:black;
+    background-color:rgb(0, 0, 0,.2);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -86,7 +86,7 @@ body{
 }
 
 .black div{
-    color:black;
+    color:hsl(0, 0%, 0%);
     width: 30vh;
     height: 48vh;
     display: grid;
