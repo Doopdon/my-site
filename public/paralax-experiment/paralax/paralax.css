@@ -1,0 +1,94 @@
+/* Parallax base styles
+      --------------------------------------------- */
+      .body {
+        margin:10px;
+      }
+
+
+      .parallax {
+        height: 80vh;
+        overflow-x: hidden;
+        perspective: 300px;
+        font-size: 200%;
+      }
+    
+      .parallax__group {
+        position: relative;
+        height: 0;
+        transform-style: preserve-3d;
+      }
+    
+      .parallax__layer {
+        height: 100vh;
+        width:100%;
+      }
+    
+      /* style the groups
+      --------------------------------------------- */
+    
+      .base {
+        z-index: 5; 
+      }
+      .back {
+        z-index: 3; 
+      }
+      .deep {
+        z-index: 2; 
+      }
+
+      .base .parallax__layer {
+        background: rgb(255, 0, 0,.2);
+        transform: translateZ(0);
+      }
+    
+      .back .parallax__layer {
+        background: rgba(192, 52, 52, 0.2);
+        transform: translateZ(-300px) scale(2);
+      }
+
+      .deep .parallax__layer{
+        background: rgb(255, 0, 0,.2);
+        transform: translateZ(-600px) scale(3);
+      }
+    
+
+
+
+      /* centre the content in the parallax layers */
+      .title {
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+
+
+      body {
+        font: 100% / 1.5 Arial;
+      }
+
+      .debug {
+        position: fixed;
+        top: 0;
+        left: .5em;
+        z-index: 999;
+        background: rgba(0,0,0,.85);
+        color: #fff;
+        padding: .5em;
+        border-radius: 0 0 5px 5px;
+      }
+      .debug-on .parallax__group {
+        -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
+        transform: translate3d(700px, 0, -800px) rotateY(30deg);
+     }
+      .debug-on .parallax__layer {
+        box-shadow: 0 0 0 2px #000;
+        opacity: 0.9;
+      }
+      .parallax__group {
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: transform 0.5s;
+      }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>A grouped pure CSS parallax demo by Keith Clark</title>
+    <meta name="description" content="Demonstration of grouping content in pure CSS parallax scrolling website">
+    <link rel="stylesheet" href="styles3/paralax.css">
+    <link rel="stylesheet" href="styles3/info.css">
+    </head>
+    
+    <body>
+      <div class="debug">
+        <label><input id='debug-btn' type="checkbox"> Debug</label>
+      </div>
+      <script>
+          let body = document.getElementsByTagName('body')[0];
+        document.getElementById('debug-btn').onchange = function(event){
+           if(event.target.checked) on();
+           else off();
+        }
+        function on(){
+            body.classList.add('debug-on');
+        }
+        function off(){
+            body.classList.remove('debug-on');
+        }
+      </script>
+      <div class="parallax">
+        <div class="parallax__group base">
+          <div class="parallax__layer parallax__layer--base">
+            <div id='about-me' class='section'>
+              <div class='content'>
+                  <div class='title-wrapper'><h3>ABOUT ME</h3></div>
+                  <p>I am a Denver-based developer with an emerged passion in front end development.</p>
+                  <p>I graduated from Kansas State University in 2016. I started my career working in integration; it was there I learned how to work with web technologies mostly web APIs and web sockets. My skills with web technologies grew when I worked with Richmond American Homes, there I learned how to work with front end technologies like Jquery and Bootstrap and worked extensively with javascript, working for SSP I learned angular, and typescript.</p>
+                  <p>At SSP innovations I worked mainly on backend projects. However, I also gained experience working as a front end developer and found that is where I was most passionate.</p>
+                  <p>After SSP I worked with several individuals to make websites in my free time. I find this type of work gave me much more freedom to learn new technologies. So far I have learned React, SCSS, and Vue, as well as learning how to design websites from the ground up.</p>
+                  <p>I have a sufficient understanding of the following:</p>
+                  <div class='skill-wrapper'>
+                      <ul class='skills'>
+                          <li>C#</li>
+                          <li>SQL</li>
+                          <li>Github</li>
+                      </ul>
+                      <ul class='skills'>
+                          <li>CSS</li>
+                          <li>HTML</li>
+                          <li>Javascript</li>
+                      </ul>
+                      <ul class='skills'>
+                          <li>SCSS</li>
+                          <li>React</li>
+                          <li>Angular</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class='profile-pic'>
+                  <img src='/images/me4.png'>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="parallax__group back">
+          <div class="parallax__layer parallax__layer--back">
+            <div class="title">Background Layer</div>
+          </div>
+        </div>
+        <div class="parallax__group deep">
+          <div class="parallax__layer parallax__layer--deep">
+            <div class="title">Deep Background Layer</div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
