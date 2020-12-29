@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="styles/experience.css">
   <link rel="stylesheet" href="styles/nav.css">
   <link rel="stylesheet" href="styles/projects.css">
+  <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
   <title>Gannon Huiting</title>
 </head>
 
@@ -44,7 +45,7 @@
     <div class='pancake'>
       <div id='about-me-link' class='nav-link'>About Me</div>
       <div id='experience-link' class='nav-link'>Experience</div>
-      <div id='about-this-site-link' class='nav-link'>About this Site</div>
+      <div id='projects-link' class='nav-link'>Projects</div>
     </div>
   </div>
 
@@ -220,7 +221,7 @@
 
     <div class="parallax__group deep index-20">
       <div class="parallax__layer parallax__layer--base">
-        <div class="projects">
+        <div id="projects">
           <div class="pancake">
             <div class='project'>
               <a href='https://silverlake.herokuapp.com/pages/index/index.html' class='image-container'>
@@ -243,9 +244,7 @@
                 <div class='title-wrapper'>
                   <h5>Richmond American Homes</h5>
                 </div>
-                <p>I updated Richmond American Homes' housing search feature, from an inaccurate backend C# process to a
-                  front end Javascript process that passed rigorous QA. Improving the search time from 30+ seconds to
-                  nearly instantaneous.</p>
+                <p>I fixed a search feature for Richmond American Homes. It was a 30+ second backend incorrect process. Its now entirely front end.</p>
                 <p>If you want to <a href="https://www.richmondamerican.com/colorado/denver-metro-new-homes">See it
                     here</a> you can click the "Add Filters" button, add filters and click the "Show X Communities"
                   button.</p>
@@ -253,7 +252,7 @@
             </div>
           </div>
           <div class='project-category'>
-            <p>Demo</p>
+            <p>Framework Demo</p>
           </div>
           <div class="pancake">
             <div class='project'>
@@ -272,7 +271,7 @@
             </div>
           </div>
           <div class='project-category'>
-            <p>Art</p>
+            <p>CSS Art</p>
           </div>
           <div class="pancake">
             <div class='project'>
@@ -282,17 +281,43 @@
               <p>I found an artist online and really liked his work. I have been turning a few of his pieces into responsive web-pages.<a
                   href="/art/space-art/space-art.html">Link</a></p>
             </div>
+
+            <div class='project'>
+              <div class='image-container'>
+                <a class='image-link' href="/art/tfrv/css-animations.html"><img src='images/art/rv.png'></a>
+              </div>
+              <p>A did some animations for a small tax management company that worked with people traveling the country in RVs.<a href="/art/tfrv/css-animations.html">Link</p>
+            </div>
+
+            <div class='project'>
+              <div class='image-container'>
+                <a class='image-link' href="/art/snow/snow.html"><img class='black-background' src='images/art/snowflake.svg'></a>
+              </div>
+              <p>I made this christmas themed scene with randomly generated snowflakes<a href="/art/snow/snow.html">Link</a></p>
+            </div>
+
+            <div class='project'>
+              <div class='image-container'>
+                <a class='image-link' href="/art/3d-art/compilation.html"><img class='black-background' src='images/3d-cube.png'></a>
+              </div>
+              <p>I started getting pretty deep into 3d css animations<a href="/art/3d-art/compilation.html">Link</a></p>
+            </div>
+
           </div>
         </div>
       </div>
       <div class="parallax__layer parallax__layer--back">
       </div>
     </div>
+
+
+
+
   </div>
 </body>
 <script>
   (function () {
-    ['about-me', 'experience'].forEach(function (name) {
+    ['about-me', 'experience','projects'].forEach(function (name) {
       document.getElementById(name + '-link').onclick = function () { scrollTo(name) };
     });
     function scrollTo(elemId) {
