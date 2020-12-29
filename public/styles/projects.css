@@ -1,0 +1,13 @@
+.project{
+    width:30vw;
+    min-width: 300px;
+}
+
+.project .image-container{
+    
+}
+
+.project .image-container img{
+    width:20vw;
+    height: 20vw;
+}

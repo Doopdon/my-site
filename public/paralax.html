@@ -1,139 +1,306 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>A grouped pure CSS parallax demo by Keith Clark</title>
-    <meta name="description" content="Demonstration of grouping content in pure CSS parallax scrolling website">
-    <link rel="stylesheet" href="styles3/paralax.css">
-    <link rel="stylesheet" href="styles3/about-me.css">
-    <link rel="stylesheet" href="styles3/base.css">
-    <link rel="stylesheet" href="styles3/pancake.css">
-    <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
 
-    </head>
-    
-    <body>
-      <div class="debug">
-        <label><input id='debug-btn' type="checkbox"> Debug</label>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Demonstration of grouping content in pure CSS parallax scrolling website">
+  <link rel="stylesheet" href="styles/paralax.css">
+  <link rel="stylesheet" href="styles/about-me.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/pancake.css">
+  <link rel="stylesheet" href="styles/two-moon.css">
+  <link rel="stylesheet" href="styles/experience.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/projects.css">
+  <title>Gannon Huiting</title>
+</head>
+
+<body>
+  <div class="debug">
+    <label><input id='debug-btn' type="checkbox"> Debug</label>
+  </div>
+  <script>
+    let body = document.getElementsByTagName('body')[0];
+    document.getElementById('debug-btn').onchange = function (event) {
+      if (event.target.checked) on();
+      else off();
+    }
+    function on() {
+      body.classList.add('debug-on');
+    }
+    function off() {
+      body.classList.remove('debug-on');
+    }
+
+    function scrollTo(elemId) {
+      var $elem = document.getElementById(elemId);
+      $elem.scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+  <!--Nav-->
+  <div id='nav'>
+    <div class='pancake'>
+      <div id='about-me-link' class='nav-link'>About Me</div>
+      <div id='experience-link' class='nav-link'>Experience</div>
+      <div id='about-this-site-link' class='nav-link'>About this Site</div>
+    </div>
+  </div>
+
+  <div class="parallax">
+    <div class="parallax__group deep index-0">
+      <div class="parallax__layer parallax__layer--base transparent"></div>
+      <div class="parallax__layer parallax__layer--back transparent">
+        <div class="section-title">
+          <div class='fade-in'>
+            <p>GANNON</p>
+            <p>HUITING</p>
+          </div>
+        </div>
       </div>
-      <script>
-          let body = document.getElementsByTagName('body')[0];
-        document.getElementById('debug-btn').onchange = function(event){
-           if(event.target.checked) on();
-           else off();
-        }
-        function on(){
-            body.classList.add('debug-on');
-        }
-        function off(){
-            body.classList.remove('debug-on');
-        }
-      </script>
-      <div class="parallax">
-        <div class="parallax__group base">
-          <div class="parallax__layer parallax__layer--base">
-            <div class='spacer-50'></div>
-            <div id='about-me' class='section'>
-              <div class='content-wrapper'>
-                <div class='info'>
-                  <div class='title-wrapper'><h3>ABOUT ME</h3></div>
-                  <img class='profile-pic' src='/images/me4.png'> 
-                  <p>I am a Denver-based developer with an emerged passion in front end development.</p>
-                  <p>I graduated from Kansas State University in 2016. I started my career working in integration; it was there I learned how to work with web technologies mostly web APIs and web sockets. My skills with web technologies grew when I worked with Richmond American Homes, there I learned how to work with front end technologies like Jquery and Bootstrap and worked extensively with javascript, working for SSP I learned angular, and typescript.</p>
-                  <p>At SSP innovations I worked mainly on backend projects. However, I also gained experience working as a front end developer and found that is where I was most passionate.</p>
-                  <p>After SSP I worked with several individuals to make websites in my free time. I find this type of work gave me much more freedom to learn new technologies. So far I have learned React, SCSS, and Vue, as well as learning how to design websites from the ground up.</p>
-                  <p>I have a sufficient understanding of the following:</p>
-                  <div class='pancake'>
-                    <div>
-                      <ul class='skills'>
-                        <li>C#</li>
-                        <li>SQL</li>
-                        <li>Github</li>
-                      </ul>
-                    </div>
-                    <div>
-                      <ul class='skills'>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                        <li>Javascript</li>
-                    </ul>
-                    </div>
-                    <div>
-                      <ul class='skills'>
-                        <li>SCSS</li>
-                        <li>React</li>
-                        <li>Angular</li>
-                    </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class='spacer-100'></div>
-            <div id='experience' class='section'>
-              <div>
-                <div class='job'>
-                  <div class='job-title-wrapper'>
-                      <div class='job-title'><h4>SOFTWARE ENGINEER</h4></div>
-                      <div class='company'>SSP Innovations</div>
-                  </div>
-                  <p>I started to work for SSP innovations as a Software Engineer. I worked closely with clients and coworkers to deliver custom plugins for ARC-GIS. I was able to familiarize myself with GIS as well as Angular JS and Typescript.</p>
-                </div>
-                <div class='job'>
-                    <div class='job-title-wrapper'>
-                        <div class='job-title'><h4>DEVELOPER</h4></div>
-                        <div class='company'>Richmond American Homes</div>
-                    </div>
-                    <p>I worked for Richmond American Homes as a web developer, there I gained the majority of my web development skills. I learned .Net MVC as well as Bootstrap and became fluent in Javascript</p>
-                </div>
-                <div class='job'>
-                    <div class='job-title-wrapper'>
-                        <div class='job-title'><h4>JUNIOR DEVELOPER</h4></div>
-                        <div class='company'>Jeffco Schools</div>
-                    </div>
-                    <p>My work at Jeffco involved integrating several different online learning platforms together using web APIs. I also learned a fair amount of C#, and SQL</p>
-                </div>
-                <div class='job'>
-                    <div class='job-title-wrapper'>
-                        <div class='job-title'><h4>INTERN DEVELOPER</h4></div>
-                        <div class='company'>Advise technologies</div>
-                    </div>
-                    <p>Advise Technologies gave me my first exposure to professional development. I worked on C# applications and also worked on data gathering and QA.</p>
-                </div>
-                <h5>Education</h5>
-                <div class='job'>
-                    <div class='job-title-wrapper'>
-                        <div class='job-title'><h4>Kansas State University</h4></div>
-                    </div>
-                    <p>I graduated a semester ahead of schedule as an Information Systems major from Kansas state University. I participated in coding competitions and hackathons.</p>
-                </div>
-              </div>
-            </div>
+      <div class="parallax__layer parallax__layer--deep">
+        <div class='frame'>
+          <div class='inner'>
           </div>
+          <div class='moon small'></div>
+          <div class='moon big'></div>
+          <div class='land'></div>
         </div>
-        <!--background layer-->
-        <div class="parallax__group back">
-          <div class="parallax__layer parallax__layer--back">
-            <div class='spacer-50'></div>
-            <div class='spacer-50'></div>
-            <div class='spacer-50'></div>
-            <div class='title'><p>Experience</p></div>
-          </div>
-        </div>
-        <!--Deep layer-->
-        <div class="parallax__group deep">
-          <div class="parallax__layer parallax__layer--deep">
-            <link rel="stylesheet" href="deep-bckground/base.css">
-            <div class='frame'>
-              <div class='fade-in'><p>GANNON</p><p>HUITING</p></div>
-              <div class='inner'></div>
-              <div class='moon small'></div>
-              <div class='moon big'></div>
-              <div class='land'></div>
+      </div>
+    </div>
+    <!--ABOUT ME-->
+    <div class="parallax__group deep index-20">
+      <div class="parallax__layer parallax__layer--base">
+        <div id='about-me'>
+          <div class='about-me-title'>About Me</div>
+          <img class='profile-pic' src='../../images/me4.png'>
+          <p>I am a Denver-based developer with an emerged passion in front end development.</p>
+          <p>I graduated from Kansas State University in 2016. I started my career working in integration; it was there
+            I learned how to work with web technologies mostly web APIs and web sockets. My skills with web technologies
+            grew when I worked with Richmond American Homes, there I learned how to work with front end technologies
+            like Jquery and Bootstrap and worked extensively with javascript, working for SSP I learned angular, and
+            typescript.</p>
+          <p>At SSP innovations I worked mainly on backend projects. However, I also gained experience working as a
+            front end developer and found that is where I was most passionate.</p>
+          <p>After SSP I worked with several individuals to make websites in my free time. I find this type of work gave
+            me much more freedom to learn new technologies. So far I have learned React, SCSS, and Vue, as well as
+            learning how to design websites from the ground up.</p>
+          <p>I have a sufficient understanding of the following:</p>
+          <div class='pancake'>
+            <div>
+              <ul class='skills'>
+                <li>C#</li>
+                <li>SQL</li>
+                <li>Github</li>
+              </ul>
+            </div>
+            <div>
+              <ul class='skills'>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+            <div>
+              <ul class='skills'>
+                <li>SCSS</li>
+                <li>React</li>
+                <li>Angular</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </body>
+    </div>
+
+    <div class="parallax__group deep index-10">
+      <div class="parallax__layer parallax__layer--base">
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+        <iframe src="/art/3d-art/galaxy/index.html" width="100%" height="100%"></iframe>
+      </div>
+    </div>
+
+    <div class="parallax__group deep index-20">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="title"></div>
+      </div>
+    </div>
+
+    <div class="parallax__group deep index-0">
+      <div class="parallax__layer parallax__layer--base">
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+        <div class="section-title">
+          <p>Experience</p>
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--deep">
+      </div>
+    </div>
+    <!--Experience-->
+    <div class="parallax__group deep index-20">
+      <div class="parallax__layer parallax__layer--base">
+        <div id='experience'>
+          <div class='job'>
+            <div class='job-title-wrapper'>
+              <div class='job-title'>
+                <h4>SOFTWARE ENGINEER</h4>
+              </div>
+              <div class='company'>SSP Innovations</div>
+            </div>
+            <p>I started to work for SSP innovations as a Software Engineer. I worked closely with clients and coworkers
+              to deliver custom plugins for ARC-GIS. I was able to familiarize myself with GIS as well as Angular JS and
+              Typescript.</p>
+          </div>
+          <div class='job'>
+            <div class='job-title-wrapper'>
+              <div class='job-title'>
+                <h4>DEVELOPER</h4>
+              </div>
+              <div class='company'>Richmond American Homes</div>
+            </div>
+            <p>I worked for Richmond American Homes as a web developer, there I gained the majority of my web
+              development skills. I learned .Net MVC as well as Bootstrap and became fluent in Javascript</p>
+          </div>
+          <div class='job'>
+            <div class='job-title-wrapper'>
+              <div class='job-title'>
+                <h4>JUNIOR DEVELOPER</h4>
+              </div>
+              <div class='company'>Jeffco Schools</div>
+            </div>
+            <p>My work at Jeffco involved integrating several different online learning platforms together using web
+              APIs. I also learned a fair amount of C#, and SQL</p>
+          </div>
+          <div class='job'>
+            <div class='job-title-wrapper'>
+              <div class='job-title'>
+                <h4>INTERN DEVELOPER</h4>
+              </div>
+              <div class='company'>Advise technologies</div>
+            </div>
+            <p>Advise Technologies gave me my first exposure to professional development. I worked on C# applications
+              and also worked on data gathering and QA.</p>
+          </div>
+          <h5>Education</h5>
+          <div class='job'>
+            <div class='job-title-wrapper'>
+              <div class='job-title'>
+                <h4>Kansas State University</h4>
+              </div>
+            </div>
+            <p>I graduated a semester ahead of schedule as an Information Systems major from Kansas state University. I
+              participated in coding competitions and hackathons.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax__group deep index-20">
+      <div class="parallax__layer parallax__layer--base">
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+        <iframe src="/art/3d-art/galaxy/index.html" width="100%" height="100%"></iframe>
+      </div>
+    </div>
+
+    <div class="parallax__group deep index-0">
+      <div class="parallax__layer parallax__layer--base">
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+        <div class="section-title">
+          <p>Projects</p>
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--deep">
+      </div>
+    </div>
+
+    <div class="parallax__group deep index-20">
+      <div class="parallax__layer parallax__layer--base">
+        <div class="projects">
+          <div class="pancake">
+            <div class='project'>
+              <a href='https://silverlake.herokuapp.com/pages/index/index.html' class='image-container'>
+                <img src='images/project-images/logo.png'>
+              </a>
+              <div class='description'>
+                <div class='title-wrapper'>
+                  <h5>Silver Lake Lodge</h5>
+                </div>
+                <p>I was asked to make a website for a bed and breakfast. I worked on making a minimalist and mobile
+                  friendly website. <a href='https://thesilverlakelodge.com/'>Before</a> and <a
+                    href='https://silverlake.herokuapp.com/pages/index/index.html'>After</a> (still in development)</p>
+              </div>
+            </div>
+            <div class='project'>
+              <a href="https://www.richmondamerican.com/colorado/denver-metro-new-homes" class='image-container'>
+                <img src='images/project-images/house-search.png'>
+              </a>
+              <div class='description'>
+                <div class='title-wrapper'>
+                  <h5>Richmond American Homes</h5>
+                </div>
+                <p>I updated Richmond American Homes' housing search feature, from an inaccurate backend C# process to a
+                  front end Javascript process that passed rigorous QA. Improving the search time from 30+ seconds to
+                  nearly instantaneous.</p>
+                <p>If you want to <a href="https://www.richmondamerican.com/colorado/denver-metro-new-homes">See it
+                    here</a> you can click the "Add Filters" button, add filters and click the "Show X Communities"
+                  button.</p>
+              </div>
+            </div>
+          </div>
+          <div class='project-category'>
+            <p>Demo</p>
+          </div>
+          <div class="pancake">
+            <div class='project'>
+              <div class='image-container'>
+                <a href='/frameworks/react/react-demo.html'>
+                  <img src='images/project-images/react-2.png'>
+                </a>
+              </div>
+              <div class='description'>
+                <div class='title-wrapper'>
+                  <h5>React</h5>
+                </div>
+                <p>I made a simple react app (its still in its early stages, but I plan on adding more in the coming
+                  weeks) you can view it <a href='/frameworks/react/react-demo.html'>here</a></a></p>
+              </div>
+            </div>
+          </div>
+          <div class='project-category'>
+            <p>Art</p>
+          </div>
+          <div class="pancake">
+            <div class='project'>
+              <div class='image-container'>
+                <a href="/art/space-art/space-art.html" class='image-link'><img src='images/art/space-art.jpg'></a>
+              </div>
+              <p>I found an artist online and really liked his work. I have been turning a few of his pieces into responsive web-pages.<a
+                  href="/art/space-art/space-art.html">Link</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax__layer parallax__layer--back">
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  (function () {
+    ['about-me', 'experience'].forEach(function (name) {
+      document.getElementById(name + '-link').onclick = function () { scrollTo(name) };
+    });
+    function scrollTo(elemId) {
+      console.log('wut')
+      var $elem = document.getElementById(elemId);
+      $elem.scrollIntoView({ behavior: "smooth" });
+    }
+  })();
+</script>
+
 </html>

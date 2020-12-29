@@ -1,0 +1,118 @@
+*{box-sizing: border-box;}
+body{
+    margin:0;
+    color:white;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+}
+.frame{
+    width: 100%;
+    height: 400%;
+    position:  relative;
+    overflow: hidden;
+    text-align: center;
+    background-image: linear-gradient(to top,rgb(247,203,122),rgb(44,73,109));
+    /* z-index: -100; */
+}
+
+.inner{
+    top:100px;
+    left:100px;
+    right:100px;
+    bottom:100px;
+    position: absolute;
+    /* height: 80%; */
+    /* width: 80%; */
+    background-image: linear-gradient(to top,rgb(228,193,127),rgb(24,52,95));
+    /* z-index: -90; */
+    
+}
+
+.land{
+    position: absolute;
+    text-align: center;
+    left:0;
+    bottom:0;
+    width: 100vw;
+    height: 20vh;
+    /* background-image: linear-gradient(to bottom left,rgb(244,180,106),rgb(24,52,95)); */
+    display: flex;
+    background-image: url(landscape.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* z-index: -70; */
+}
+
+.land p{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    align-self: flex-end;
+    
+}
+
+.moon{
+    /* z-index: -80; */
+    position: absolute;
+    border-radius: 50%;
+    background-image: radial-gradient(circle at 120% -20%, rgb(203,155,187), rgb(24,52,95));
+
+    /* background-image: linear-gradient(to bottom left,rgb(203,155,187),rgb(24,52,95),rgb(24,52,95)); */
+}
+
+.big{
+    animation-name: float-up-big;
+    animation-duration: 3s; 
+    top:30vh;
+    left:calc(50vw - 20vh);
+    width:40vh;
+    height:40vh;
+}
+
+.small{
+    animation-name: float-up-small;
+    animation-duration: 3s;
+    top:60vh;
+    right:calc(7vw - 5vh);
+    right:7vw;
+    width:10vh;
+    height:10vh;
+}
+
+svg{
+    position: absolute;
+    /* width: 100vw; */
+    left:0;
+    bottom:0;
+    /* z-index: -1; */
+}
+
+.landscape{
+    position: absolute;
+    width:100vh;
+    height: 20vh;
+    left:0;
+    bottom:0;
+}
+
+
+
+
+@keyframes float-up-big {
+    from {
+        top:50vh;
+    }
+    to {
+        top:30vh;
+    }
+}
+
+@keyframes float-up-small {
+    from {
+        top:80vh;
+    }
+    to {
+        top:60vh;
+    }
+}
+

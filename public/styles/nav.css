@@ -1,0 +1,17 @@
+#nav{
+    position: fixed;
+    z-index: 1000;
+    width: 80%;
+    background-color:rgb(44,73,109,.8);
+    border-bottom:1px solid white;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#nav .nav-link{
+    cursor: pointer;
+}
+
+#nav .nav-link:hover{
+    text-decoration: underline;
+}
