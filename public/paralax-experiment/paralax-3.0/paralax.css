@@ -2,8 +2,8 @@
       --------------------------------------------- */
       body {
         margin:0px;
+        font: 100% / 1.5 Arial;
       }
-
 
       .parallax {
         height: 100vh;
@@ -11,40 +11,38 @@
         perspective: 300px;
       }
     
-      .parallax__group {
+      .p-group {
         position: relative;
         height: 100vh;
         transform-style: preserve-3d;
       }
 
-      .parallax__group-2 {
-        position: relative;
-        transform-style: preserve-3d;
-      }
+      
     
-      .parallax__layer {
+      .p-layer {
         position: absolute;
         top: 0;
         left: 0;
-        right: 0;
-        bottom: 0;
+        width:100%;
+        height: 100%;
       }
 
-      .parallax__layer-2 {
-      
+      .responsive{
+        height: auto;
+        position: relative;
       }
     
-      .parallax__layer--base {
+      .p-base {
         transform: translateZ(0);
         z-index: 15;
       }
     
-      .parallax__layer--back {
+      .p-back {
         transform: translateZ(-300px) scale(2);
         z-index: 10;
       }
     
-      .parallax__layer--deep {
+      .p-deep {
         transform: translateZ(-600px) scale(3);
         z-index: 5;
       }
@@ -59,77 +57,12 @@
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
       }
-    
-    .zero{
-      z-index: 20;
-    }
-    .one{
-      z-index: 15;
-    }
-    .two{
-      z-index: 15;
-    }
-    .three{
-      z-index: 0;
-    }
 
-    .four{
-      z-index: 15;
-    }
-    .five{
-      z-index: 5;
-    }
-    .six{
-      z-index: 0;
-    }
-    
-    .index-0{z-index: 0;}
-    .index-10{z-index: 10;}
-    .index-20{z-index: 20;}
-    .index-30{z-index: 30;}
-    .index-40{z-index: 40;}
-
-
-      /* style the groups
-      --------------------------------------------- */
-    
-      /* .base {
-        z-index: 5; 
-      }
-      .back {
-        z-index: 3; 
-      }
-      .deep {
-        z-index: 2; 
-      } */
 
       .red {
         background-color: rgb(255, 0, 0,.5)
       }
-    
-      .blue {
-        background-color: blue;
-      }
 
-      .green{
-        background-color: green;
-      }
-    
-      
-
-      .transparent{
-        background-color: none;
-      }
-
-
-
-
-
-
-
-      body {
-        font: 100% / 1.5 Arial;
-      }
 
       .debug {
         position: fixed;
@@ -141,15 +74,15 @@
         padding: .5em;
         border-radius: 0 0 5px 5px;
       }
-      .debug-on .parallax__group {
+      .debug-on .p-group {
         -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
         transform: translate3d(700px, 0, -800px) rotateY(30deg);
      }
-      .debug-on .parallax__layer {
+      .debug-on .p-layer {
         box-shadow: 0 0 0 2px #000;
         opacity: 0.9;
       }
-      .parallax__group {
+      .p-group {
         -webkit-transition: -webkit-transform 0.5s;
         transition: transform 0.5s;
       }
