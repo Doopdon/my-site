@@ -1,193 +1,371 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <link rel="stylesheet" href="styles2/base.css">
-    <link rel="stylesheet" href="styles2/overlay.css">
-    <link rel="stylesheet" href="styles2/backgrounds.css">
-    <link rel="stylesheet" href="styles2/about-me.css">
-    <link rel="stylesheet" href="styles2/projects.css">
-    <link rel="stylesheet" href="styles2/experience.css">
-    <link rel="stylesheet" href="styles2/education.css">
-    <link rel="stylesheet" href="styles2/contact.css">
-    <link rel="stylesheet" href="styles2/pancake.css">
-    <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Demonstration of grouping content in pure CSS parallax scrolling website">
+  <link rel="stylesheet" href="styles/paralax.css">
+  <link rel="stylesheet" href="styles/about-me.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/pancake.css">
+  <link rel="stylesheet" href="styles/two-moon.css">
+  <link rel="stylesheet" href="styles/experience.css">
+  <link rel="stylesheet" href="styles/nav.css">
+  <link rel="stylesheet" href="styles/projects.css">
+  <link rel="stylesheet" href="styles/misc.css">
+  <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
+  <title>Gannon Huiting</title>
 </head>
+
 <body>
-    <div id='overlay'>
-        <div class='nav-bar'>
-            <div class='link-wrapper'><div id='about-me-link' class='bar-item'>ABOUT</div></div>
-            <div class='link-wrapper'><div id='experience-link' class='bar-item'>EXPERIENCE</div></div>
-            <div class='link-wrapper'><div id='projects-link' class='bar-item'>PROJECTS</div></div>
-            <div class='link-wrapper'><div id='contact-link' class='bar-item'>CONTACT</div></div>
+  <button class='debug-off-btn debug'>Turn Debug Off</button>
+<!--Nav-->
+<div id='nav'>
+  <div class='pancake'>
+    <div id='about-me-link' class='nav-link'>About Me</div>
+    <div id='experience-link' class='nav-link'>Experience</div>
+    <div id='projects-link' class='nav-link'>Projects</div>
+    <div id='about-this-site-link' class='nav-link'>About this Site</div>
+    <div id='contact-link' class='nav-link'>Contact</div>
+  </div>
+</div>
+
+
+  <div class="parallax">
+    <div class="p-group">
+      <div class="p-layer p-base">
+      </div>
+      <div class="p-layer p-back">
+        <div class="section-title">
+          <div class='fade-in'>
+            <p>GANNON</p>
+            <p>HUITING</p>
+          </div>
         </div>
+      </div>
+      <div class="p-layer p-deep">
+        <div class='frame'>
+          <div class='inner'>
+          </div>
+          <div class='moon small'></div>
+          <div class='moon big'></div>
+          <div class='land'></div>
+        </div>
+      </div>
     </div>
-    <div class='image-wrapper big-blue-bear'>
-        <div class='image-caption name'>GANNON HUITING</div>
-    </div>
-    <div id='about-me' class='section'>
-        <div class='content'>
-            <div class='title-wrapper'><h3>ABOUT ME</h3></div>
-            <p>I am a Denver-based developer with an emerged passion in front end development.</p>
-            <p>I graduated from Kansas State University in 2016. I started my career working in integration; it was there I learned how to work with web technologies mostly web APIs and web sockets. My skills with web technologies grew when I worked with Richmond American Homes, there I learned how to work with front end technologies like Jquery and Bootstrap and worked extensively with javascript, working for SSP I learned angular, and typescript.</p>
-            <p>At SSP innovations I worked mainly on backend projects. However, I also gained experience working as a front end developer and found that is where I was most passionate.</p>
-            <p>After SSP I worked with several individuals to make websites in my free time. I find this type of work gave me much more freedom to learn new technologies. So far I have learned React, SCSS, and Vue, as well as learning how to design websites from the ground up.</p>
-            <p>I have a sufficient understanding of the following:</p>
-            <div class='skill-wrapper'>
-                <ul class='skills'>
-                    <li>C#</li>
-                    <li>SQL</li>
-                    <li>Github</li>
-                </ul>
-                <ul class='skills'>
-                    <li>CSS</li>
-                    <li>HTML</li>
-                    <li>Javascript</li>
-                </ul>
-                <ul class='skills'>
-                    <li>SCSS</li>
-                    <li>React</li>
-                    <li>Angular</li>
-                </ul>
-            </div>
-        </div>
-        <div class='profile-pic'>
-            <img src='/images/me4.png'>
-        </div>
-    </div>
-    <div class='image-wrapper dia'>
-        <div class='image-caption'>EXPERIENCE</div>
-    </div>
-    <div id='experience' class='section'>
-        <div class='job'>
-            <div class='job-title-wrapper'>
-                <div class='job-title'><h4>SOFTWARE ENGINEER</h4></div>
-                <div class='company'>SSP Innovations</div>
-            </div>
-            <p>I started to work for SSP innovations as a Software Engineer. I worked closely with clients and coworkers to deliver custom plugins for ARC-GIS. I was able to familiarize myself with GIS as well as Angular JS and Typescript.</p>
-        </div>
-        <div class='job'>
-            <div class='job-title-wrapper'>
-                <div class='job-title'><h4>DEVELOPER</h4></div>
-                <div class='company'>Richmond American Homes</div>
-            </div>
-            <p>I worked for Richmond American Homes as a web developer, there I gained the majority of my web development skills. I learned .Net MVC as well as Bootstrap and became fluent in Javascript</p>
-        </div>
-        <div class='job'>
-            <div class='job-title-wrapper'>
-                <div class='job-title'><h4>JUNIOR DEVELOPER</h4></div>
-                <div class='company'>Jeffco Schools</div>
-            </div>
-            <p>My work at Jeffco involved integrating several different online learning platforms together using web APIs. I also learned a fair amount of C#, and SQL</p>
-        </div>
-        <div class='job'>
-            <div class='job-title-wrapper'>
-                <div class='job-title'><h4>INTERN DEVELOPER</h4></div>
-                <div class='company'>Advise technologies</div>
-            </div>
-            <p>Advise Technologies gave me my first exposure to professional development. I worked on C# applications and also worked on data gathering and QA.</p>
-        </div>
-        <h5>Education</h5>
-        <div class='job'>
-            <div class='job-title-wrapper'>
-                <div class='job-title'><h4>Kansas State University</h4></div>
-            </div>
-            <p>I graduated a semester ahead of schedule as an Information Systems major from Kansas state University. I participated in coding competitions and hackathons.</p>
-        </div>
-    </div>
-    <div class='image-wrapper denver-art-museum'>
-        <div class='image-caption'>PROJECTS</div>
-    </div>
-    <div id='projects' class='section'>
-        <div class='project underline'>
-            <a href='https://silverlake.herokuapp.com/pages/index/index.html' class='image-container'>
-                <img src='images/project-images/logo.png'>
-            </a>
-            <div class='description'>
-                <div class='title-wrapper'><h5>Silver Lake Lodge</h5></div>
-                <p>I was asked to make a website for a bed and breakfast. I worked on making a minimalist and mobile friendly website. <a href='https://thesilverlakelodge.com/'>Before</a> and <a href='https://silverlake.herokuapp.com/pages/index/index.html'>After</a> (still in development)</p>
-            </div>
-        </div>
-        <div class='project underline'>
-            <div class='description'>
-                <div class='title-wrapper'><h5>Richmond American Homes</h5></div>
-                <p>I updated Richmond American Homes' housing search feature, from an inaccurate backend C# process to a front end Javascript process that passed rigorous QA. Improving the search time from 30+ seconds to nearly instantaneous.</p>
-                <p>If you want to <a href="https://www.richmondamerican.com/colorado/denver-metro-new-homes">See it here</a> you can click the "Add Filters" button, add filters and click the "Show X Communities" button.</p>
-            </div>
-            <a href="https://www.richmondamerican.com/colorado/denver-metro-new-homes" class='image-container'>
-                <img src='images/project-images/house-search.png'>
-            </a>
-        </div>
-        <div class='title-wrapper'><h3>Demos</h3></div>
-        <div class='project underline'>
-            <div class='image-container'>
-                <a href='/frameworks/react/react-demo.html'>
-                    <img src='images/project-images/react-2.png' >
-                </a>
-            </div>
-            <div class='description'>
-                <div class='title-wrapper'><h5>React</h5></div>
-                <p>I made a simple react app (its still in its early stages, but I plan on adding more in the coming weeks) you can view it <a href='/frameworks/react/react-demo.html'>here</a></a></p>
-            </div>
-        </div>
-        <!-- <div class='project underline'>
-            <div class='description'>
-                <div class='title-wrapper'><h5>Vue</h5></div>
-                <p><a href='/frameworks/vue/vue.html'>Here</a> is a simple Todo app in View (more updates in the following weeks)</p>
-            </div>
-            <div class='image-container'>
-                <a href='/frameworks/vue/vue.html'>
-                    <img src='images/project-images/vue.png'>
-                </a>
-            </div>
-        </div> -->
-        <div class='title-wrapper'><h3>CSS Art</h3></div>
-        <div class='pancake'>
-            <div class='art-sample'>
-                <a href="/art/two-moon/two-moon.html" class='image-link'><img src='images/art/space-art.jpg'></a>
-                <p>I saw this image and it inspired me to recreate it as a responsive web page. <a href="/art/two-moon/two-moon.html">Link</a></p>
+    <!--About me-->
+    <div class="p-group responsive">
+      <div class="p-layer responsive p-base">
+        <div id='about-me'>
+          <div class='about-me-title'>About Me</div>
+          <img class='profile-pic' src='../../images/me4.png'>
+          <p>I am a Denver-based developer with an emerged passion in front end development.</p>
+          <p>I graduated from Kansas State University in 2016. I started my career working in integration; it was there
+            I learned how to work with web technologies mostly web APIs and web sockets. My skills with web technologies
+            grew when I worked with Richmond American Homes, there I learned how to work with front end technologies
+            like Jquery and Bootstrap and worked extensively with javascript, working for SSP I learned angular, and
+            typescript.</p>
+          <p>At SSP innovations I worked mainly on backend projects. However, I also gained experience working as a
+            front end developer and found that is where I was most passionate.</p>
+          <p>After SSP I worked with several individuals to make websites in my free time. I find this type of work gave
+            me much more freedom to learn new technologies. So far I have learned React, SCSS, and Vue, as well as
+            learning how to design websites from the ground up.</p>
+          <p>I have a sufficient understanding of the following:</p>
+          <div class='pancake'>
+            <div>
+              <ul class='skills'>
+                <li>C#</li>
+                <li>SQL</li>
+                <li>Github</li>
+              </ul>
             </div>
             <div>
-                <a class='image-link' href="/art/red-blue/red-blue.html"><img  src='images/art/VIRUS-minima.png'></a>
-                <p>I looked on the <a href="https://www.ribbonriven.com/retro-futurism">original artists site</a> and deceded to recreate another one <a href="/art/red-blue/red-blue.html">Link</a></p>
+              <ul class='skills'>
+                <li>CSS</li>
+                <li>HTML</li>
+                <li>Javascript</li>
+              </ul>
             </div>
-            <div class='art-sample'>
-                <a class='image-link' href="/art/tfrv/css-animations.html"><img src='images/art/rv.png'></a>
-                <p>A did some animations for a small tax management company that worked with people traveling the country in RVs.<a href="/art/tfrv/css-animations.html">Link</a></p>
+            <div>
+              <ul class='skills'>
+                <li>SCSS</li>
+                <li>React</li>
+                <li>Angular</li>
+              </ul>
             </div>
-            <div class='art-sample'>
-                <a class='image-link' href="/art/snow/snow.html"><img class='black-background' src='images/art/snowflake.svg'></a>
-                <p>I made this christmas themed scene with randomly generated snowflakes<a href="/art/snow/snow.html">Link</a></p>
-            </div>
-            <div class='art-sample'>
-                <a class='image-link' href="/art/3d-art/compilation.html"><img class='black-background' src='images/3d-cube.png'></a>
-                <p>I started getting pretty deep into 3d css animations<a href="/art/3d-art/compilation.html">Link</a></p>
-            </div>
-            
+          </div>
         </div>
+      </div>
+      <div class="p-layer p-back">
+        <!-- <iframe src="/art/3d-art/galaxy/index.html" width="100%" height="100%"></iframe> -->
+      </div>
     </div>
-    <div class='image-wrapper city-park'>
-        <div class='image-caption'>CONTACT</div>
-    </div>
-    <div id='contact' class='section'>
-        <div class='title-wrapper'><h3>Contact info</h3></div>
-        <div class='contact-method'>
-            <a>Phone:</a>
-            <a>720.318.5814</a>
-        </div>
-        <div class='contact-method'>
-            <a>Email:</a>
-            <a>GannonHuiting@gmail.com</a>
-        </div>
-        <div class='contact-method'>
-            <a href="https://www.linkedin.com/in/gannon-huiting-039855149/">Linked In</a>
-        </div>
-    </div>
-    <script src='scripts/scrollTo.js'></script>
-</body>
-</html>
 
-<!--
-    TODOS:
-    make Vue app
-    learn react Hooks.
--->
+    <div class="p-group">
+      <div class="p-layer p-base">
+      </div>
+      <div class="p-layer p-back">
+        <div class="section-title">
+          Experience
+        </div>
+      </div>
+    </div>
+    <!--Experience-->
+    <div class="p-group responsive">
+      <div class="p-layer responsive p-base">
+        <div id='experience'>
+          <div class='job'>
+            <div class='job-title-wrapper'>
+              <div class='job-title'>
+                <h4>SOFTWARE ENGINEER</h4>
+              </div>
+              <div class='company'>SSP Innovations</div>
+            </div>
+            <p>I started to work for SSP innovations as a Software Engineer. I worked closely with clients and coworkers
+              to deliver custom plugins for ARC-GIS. I was able to familiarize myself with GIS as well as Angular JS and
+              Typescript.</p>
+          </div>
+          <div class='job'>
+            <div class='job-title-wrapper'>
+              <div class='job-title'>
+                <h4>DEVELOPER</h4>
+              </div>
+              <div class='company'>Richmond American Homes</div>
+            </div>
+            <p>I worked for Richmond American Homes as a web developer, there I gained the majority of my web
+              development skills. I learned .Net MVC as well as Bootstrap and became fluent in Javascript</p>
+          </div>
+          <div class='job'>
+            <div class='job-title-wrapper'>
+              <div class='job-title'>
+                <h4>JUNIOR DEVELOPER</h4>
+              </div>
+              <div class='company'>Jeffco Schools</div>
+            </div>
+            <p>My work at Jeffco involved integrating several different online learning platforms together using web
+              APIs. I also learned a fair amount of C#, and SQL</p>
+          </div>
+          <div class='job'>
+            <div class='job-title-wrapper'>
+              <div class='job-title'>
+                <h4>INTERN DEVELOPER</h4>
+              </div>
+              <div class='company'>Advise technologies</div>
+            </div>
+            <p>Advise Technologies gave me my first exposure to professional development. I worked on C# applications
+              and also worked on data gathering and QA.</p>
+          </div>
+          <h5>Education</h5>
+          <div class='job'>
+            <div class='job-title-wrapper'>
+              <div class='job-title'>
+                <h4>Kansas State University</h4>
+              </div>
+            </div>
+            <p>I graduated a semester ahead of schedule as an Information Systems major from Kansas state University. I
+              participated in coding competitions and hackathons.</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-layer p-back">
+        <!-- <iframe src="/art/3d-art/galaxy/index.html" width="100%" height="100%"></iframe> -->
+      </div>
+    </div>
+
+    <div class="p-group">
+      <div class="p-layer p-base">
+      </div>
+      <div class="p-layer p-back">
+        <div class="section-title">
+          Projects
+        </div>
+      </div>
+    </div>
+    <!--Projects-->
+    <div class="p-group responsive">
+      <div class="p-layer responsive p-base">
+        <div id="projects">
+          <div class="pancake">
+            <div class='project'>
+              <a href='https://silverlake.herokuapp.com/pages/index/index.html' class='image-container'>
+                <img src='images/project-images/logo.png'>
+              </a>
+              <div class='description'>
+                <div class='title-wrapper'>
+                  <h5>Silver Lake Lodge</h5>
+                </div>
+                <p>I was asked to make a website for a bed and breakfast. I worked on making a minimalist and mobile
+                  friendly website. <a href='https://thesilverlakelodge.com/'>Before</a> and <a
+                    href='https://silverlake.herokuapp.com/pages/index/index.html'>After</a> (still in development)</p>
+              </div>
+            </div>
+            <div class='project'>
+              <a href="https://www.richmondamerican.com/colorado/denver-metro-new-homes" class='image-container'>
+                <img src='images/project-images/house-search.png'>
+              </a>
+              <div class='description'>
+                <div class='title-wrapper'>
+                  <h5>Richmond American Homes</h5>
+                </div>
+                <p>I fixed a search feature for Richmond American Homes. It was a 30+ second backend incorrect process. Its now entirely front end.</p>
+                <p>If you want to <a href="https://www.richmondamerican.com/colorado/denver-metro-new-homes">See it
+                    here</a> you can click the "Add Filters" button, add filters and click the "Show X Communities"
+                  button.</p>
+              </div>
+            </div>
+          </div>
+          <div class='project-category'>
+            <p>Framework Demo</p>
+          </div>
+          <div class="pancake">
+            <div class='project'>
+              <div class='image-container'>
+                <a href='/frameworks/react/react-demo.html'>
+                  <img src='images/project-images/react-2.png'>
+                </a>
+              </div>
+              <div class='description'>
+                <div class='title-wrapper'>
+                  <h5>React</h5>
+                </div>
+                <p>I made a simple react app (its still in its early stages, but I plan on adding more in the coming
+                  weeks) you can view it <a href='/frameworks/react/react-demo.html'>here</a></a></p>
+              </div>
+            </div>
+          </div>
+          <div class='project-category'>
+            <p>CSS Art</p>
+          </div>
+          <div class="pancake">
+            <div class='project'>
+              <div class='image-container'>
+                <a href="/art/space-art/space-art.html" class='image-link'><img src='images/art/space-art.jpg'></a>
+              </div>
+              <p>I found an artist online and really liked his work. I have been turning a few of his pieces into responsive web-pages.<a
+                  href="/art/space-art/space-art.html">Link</a></p>
+            </div>
+
+            <div class='project'>
+              <div class='image-container'>
+                <a class='image-link' href="/art/tfrv/css-animations.html"><img src='images/art/rv.png'></a>
+              </div>
+              <p>A did some animations for a small tax management company that worked with people traveling the country in RVs.<a href="/art/tfrv/css-animations.html">Link</p>
+            </div>
+
+            <div class='project'>
+              <div class='image-container'>
+                <a class='image-link' href="/art/snow/snow.html"><img src='images/art/snowflake.svg'></a>
+              </div>
+              <p>I made this christmas themed scene with randomly generated snowflakes<a href="/art/snow/snow.html">Link</a></p>
+            </div>
+
+
+            
+            <div class='project'>
+              <div class='image-container'>
+                <a class='image-link' href="/art/tfrv/css-animations.html"><img src='images/3d-cube.png'></a>
+              </div>
+              <p>I started getting pretty deep into 3d css animations<a href="/art/3d-art/compilation.html">Link</a></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="p-layer p-back">
+        <!-- <iframe src="/art/3d-art/galaxy/index.html" width="100%" height="100%"></iframe> -->
+      </div>
+    </div>
+
+    <div class="p-group">
+      <div class="p-layer p-base">
+      </div>
+      <div class="p-layer p-back">
+        <div class="section-title">
+          About This Site
+        </div>
+      </div>
+    </div>
+
+    <div class="p-group responsive">
+      <div class="p-layer responsive p-base">
+        <div id='about-this-site'>
+          <p>This page has no frameworks, plugins or addons. It is pure hand written HTML/CSS/Javascript</p>
+          <p>This site was made with the help of <a href='https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/'>A demo by Kieth Clark</a> and <a href='https://www.ribbonriven.com/retro-futurism'>Art by Grant Yun</a> and I am more than happy to give both of them credit for code, color schemes, and Art direction.</p>
+          <p>But this was not simple copy paste.</p>
+          <p>I used the demo by Kieth and repurposed it to work with my vision. I needed to simplify his style sheet and make it generic enough to simply list sections without extra work. Originally it had hard coded z-indexes which I made unnecessary, and the sections were not responsive in a way that would allow for variable length content without messing up layer alignment. It took quite a few attempts to get it working in a way I felt was maintainable.</p>
+          <p>As for the art, I took static images and turned them into responsive web elements. I kept the positioning and color schemes, But I plan on adding more and diverging from his original work more as time goes on.</p>
+          <p>If you want a look behind the curtain you can turn on debug mode: <button class='debug-on debug'>Turn Debug On</button></p>
+          
+          <!-- <div class="debug">
+            <label><input id='debug-btn' type="checkbox"> Debug</label>
+          </div> -->
+
+        </div>
+      </div>
+      <div class="p-layer p-back">
+        <!-- <iframe src="/art/3d-art/galaxy/index.html" width="100%" height="100%"></iframe> -->
+      </div>
+    </div>
+
+    <div class="p-group">
+      <div class="p-layer p-base">
+      </div>
+      <div class="p-layer p-back">
+        <div class="section-title">
+          Contact Info
+        </div>
+      </div>
+    </div>
+
+    <div class="p-group responsive">
+      <div class="p-layer responsive p-base">
+        <div id='contact' class='section'>
+          <div class='title-wrapper'><h3>Contact info</h3></div>
+          <div class='contact-method'>
+              <a>Phone:</a>
+              <a>720.318.5814</a>
+          </div>
+          <div class='contact-method'>
+              <a>Email:</a>
+              <a>GannonHuiting@gmail.com</a>
+          </div>
+          <div class='contact-method'>
+              <a href="https://www.linkedin.com/in/gannon-huiting-039855149/">Linked In</a>
+          </div>
+        </div>
+      </div>
+      <div class="p-layer p-back">
+        <!-- <iframe src="/art/3d-art/galaxy/index.html" width="100%" height="100%"></iframe> -->
+      </div>
+    </div>
+    
+  </div>
+</body>
+</body>
+<script>
+  (function () {
+    ['about-me', 'experience','projects','about-this-site','contact'].forEach(function (name) {
+      document.getElementById(name + '-link').onclick = function () { scrollTo(name) };
+    });
+    function scrollTo(elemId) {
+      var $elem = document.getElementById(elemId);
+      $elem.scrollIntoView({ behavior: "smooth" });
+    }
+  })();
+
+
+  let body = document.getElementsByTagName('body')[0];
+
+    let buttons = document.getElementsByClassName('debug');
+    buttons[0].onclick = off;
+    buttons[1].onclick = on;
+    function on() {
+      body.classList.add('debug-on');
+    }
+    function off() {
+      body.classList.remove('debug-on');
+    }
+</script>
+
+</html>

@@ -1,9 +1,5 @@
-*{box-sizing: border-box;}
 body{
-    margin:0;
-    color:white;
-    letter-spacing: 2px;
-    font-family: 'Roboto', sans-serif;
+    background-color:rgb(44,73,109);
 }
 .frame{
     width: 100%;

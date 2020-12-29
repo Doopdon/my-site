@@ -4,6 +4,11 @@
      box-sizing: border-box; 
 }
 
+body{
+    margin: 0px;
+    color:white;
+}
+
 .section-title{
     font-size: 3em;
     width: 100%;
@@ -30,4 +35,9 @@
 
 iframe{
     border:none;
+}
+
+a{
+    color: inherit;
+    font-weight: bold;
 }
