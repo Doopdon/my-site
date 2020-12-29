@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>A grouped pure CSS parallax demo by Keith Clark</title>
+    <meta name="description" content="Demonstration of grouping content in pure CSS parallax scrolling website">
+    <link rel="stylesheet" href="paralax.css">
+    </head>
+    
+    <body>
+      <div class="debug">
+        <label><input id='debug-btn' type="checkbox"> Debug</label>
+      </div>
+      <script>
+          let body = document.getElementsByTagName('body')[0];
+        document.getElementById('debug-btn').onchange = function(event){
+           if(event.target.checked) on();
+           else off();
+        }
+        function on(){
+            body.classList.add('debug-on');
+        }
+        function off(){
+            body.classList.remove('debug-on');
+        }
+      </script>
+      <div class="parallax">
+        <!-- <div class="parallax__group base zero">
+          <div class="parallax__layer parallax__layer--base red">
+            <div class="title">Base Layer</div>
+          </div>
+        </div>
+        <div class="parallax__group base one">
+          <div class="parallax__layer parallax__layer--base transparent">
+            <div class="title">Base Layer</div>
+          </div>
+          <div class="parallax__layer parallax__layer--back blue">
+            <div class="title">Background Layer</div>
+          </div>
+        </div>
+        <div class="parallax__group back two">
+          <div class="parallax__layer parallax__layer--base red">
+            <div class="title">Base Layer</div>
+          </div>
+        </div> -->
+      
+        <div class="parallax__group deep three">
+          <div class="parallax__layer parallax__layer--base transparent">
+            <div class="title">Base Layer</div>
+          </div>
+          <div class="parallax__layer parallax__layer--back transparent">
+            <div class="title">Background Layer</div>
+          </div>
+          <div class="parallax__layer parallax__layer--deep green">
+            <div class="title">Deep Background Layer</div>
+          </div>
+        </div>
+
+        <div class="parallax__group deep four">
+          <div class="parallax__layer parallax__layer--base red">
+            <div class="title">Base Layer</div>
+          </div>
+        </div>
+
+        <div class="parallax__group deep five">
+          <div class="parallax__layer parallax__layer--base transparent">
+            <div class="title">Base Layer</div>
+          </div>
+          <div class="parallax__layer parallax__layer--back blue">
+            <div class="title">Background Layer</div>
+          </div>
+        </div>
+
+        <div class="parallax__group deep four">
+          <div class="parallax__layer parallax__layer--base red">
+            <div class="title">Base Layer</div>
+          </div>
+        </div>
+
+        <div class="parallax__group deep six">
+          <div class="parallax__layer parallax__layer--base transparent">
+            <div class="title">Base Layer</div>
+          </div>
+          <div class="parallax__layer parallax__layer--back transparent">
+            <div class="title">Background Layer</div>
+          </div>
+          <div class="parallax__layer parallax__layer--deep green">
+            <div class="title">Deep Background Layer</div>
+          </div>
+        </div>
+        
+      </div>
+    </body>
+</html>
