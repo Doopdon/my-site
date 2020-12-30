@@ -18,7 +18,7 @@ class MainPage extends React.Component{
     render(){
         return <div className='page-container'>
             <p>props are fairly easy to understand. To add a prop simply add it like an attribute.</p>
-            <div className='code'>﹤Mycomponent MyProp=❴'my-prop-value'❵﹥</div>
+            <div className='code'>{`﹤Mycomponent MyProp={'my-prop-value'}﹥`}</div>
             <p>This prop can be simple things like strings, and numbers, or more advanced things like and functions</p>
             <p>Here is a the code for a component that takes a prop that is used to fill the h1 tag. when you click add it will make a new component</p>
             <div className='code'>

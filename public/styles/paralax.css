@@ -42,6 +42,11 @@
         transform: translateZ(-300px) scale(2);
         z-index: 10;
       }
+
+      .p-deep-back {
+        transform: translateZ(-450px) scale(2.5);
+        z-index: 10;
+      }
     
       .p-deep {
         transform: translateZ(-600px) scale(3);

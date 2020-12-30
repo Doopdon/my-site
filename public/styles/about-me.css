@@ -3,6 +3,10 @@
     padding:10%
 }
 
+.about-me .skill-list{
+    text-align: left;
+}
+
 .about-me-title{
     font-size: 2em;
     width:100%;

@@ -48,7 +48,7 @@ var MainPage = function (_React$Component) {
                 React.createElement(
                     'div',
                     { className: 'code' },
-                    '\uFE64Mycomponent MyProp=\u2774\'my-prop-value\'\u2775\uFE65'
+                    '\uFE64Mycomponent MyProp={\'my-prop-value\'}\uFE65'
                 ),
                 React.createElement(
                     'p',
