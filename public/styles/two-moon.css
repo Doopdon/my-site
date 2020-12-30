@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(44,73,109);
+    /* color:rgb(44,73,109); */
 }
 .frame{
     width: 100%;
@@ -7,7 +7,7 @@ body{
     position:  relative;
     overflow: hidden;
     text-align: center;
-    background-image: linear-gradient(to top,rgb(247,203,122),rgb(44,73,109));
+    background-image: linear-gradient(to top,rgb(237,124,61),rgb(77, 117, 202));
     /* z-index: -100; */
 }
 
@@ -19,7 +19,7 @@ body{
     position: absolute;
     /* height: 80%; */
     /* width: 80%; */
-    background-image: linear-gradient(to top,rgb(228,193,127),rgb(24,52,95));
+    background-image: linear-gradient(to top,rgb(247, 142, 85),rgb(55, 88, 177));
     /* z-index: -90; */
     
 }
