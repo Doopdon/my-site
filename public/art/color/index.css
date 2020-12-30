@@ -27,44 +27,47 @@
 .a .side-a{color: white;}
 .a .side-b{color: black;}
 .a .inner{
-    background-image: linear-gradient(to top,rgb(218, 113, 57),rgb(35, 63, 141));
+    background-image: linear-gradient(to top,rgb(247, 142, 85),rgb(55, 88, 177));
     color:white;
 }
 
 .b{
-    background-image: linear-gradient(to top,rgb(89, 173, 86),rgb(148, 48, 34)); 
+    background-image: linear-gradient(to bottom,rgb(26, 64, 95),rgb(124, 123, 123));
 }
-.b .side-a{color: white;}
+.b .side-a{color: rgb(255, 255, 255); text-shadow: 0px 0px 2px black;}
 .b .side-b{color: black;}
 .b .inner{
-    background-image: linear-gradient(to top,rgb(61, 143, 58),rgb(105, 23, 12));;   
+    background-image: linear-gradient(to bottom,rgb(11, 37, 58),rgb(131, 130, 130));
 }
 
 
 .c{
-    background-image: linear-gradient(to top,rgb(190, 52, 52),rgb(0, 0, 0));
+    background-image: linear-gradient(to bottom,rgb(26, 64, 95),rgb(238, 207, 171),rgb(241, 168, 83));
 }
-.c .side-a{color: white;}
+.c .side-a{color: rgb(255, 255, 255); text-shadow: 0px 0px 2px black;}
 .c .side-b{color: black;}
 .c .inner{
-    background-image: linear-gradient(to top,rgb(146, 41, 41),rgb(0, 0, 0));
+    background-image: linear-gradient(to bottom,rgb(11, 37, 58),rgb(219, 198, 170),rgb(247, 175, 93));
 }
-.d{
-    background-image: linear-gradient(to top,rgb(168, 106, 25),rgb(180, 195, 238));
+
+a{
+    background-image: linear-gradient(to top,rgb(252, 115, 52),rgb(55, 88, 177));;   
+    
 }
-.d .side-a{color: white;}
-.d .side-b{color: black;}
-.d .inner{
-    background-image: linear-gradient(to top,rgb(168, 106, 25),rgb(181, 198, 245));
+.a .side-a{color: white;}
+.a .side-b{color: black;}
+.a .inner{
+    background-image: linear-gradient(to top,rgb(218, 108, 57),rgb(35, 63, 141));
+    color:white;
 }
 
 .e{
-    background-image: linear-gradient(to top,rgb(26, 64, 95),rgb(255, 255, 255));
+    background-image: linear-gradient(to bottom,rgb(26, 64, 95),rgb(255, 255, 255));
 }
-.e .side-a{color: white;}
+.e .side-a{color: rgb(255, 255, 255); text-shadow: 0px 0px 2px black;}
 .e .side-b{color: black;}
 .e .inner{
-    background-image: linear-gradient(to top,rgb(11, 37, 58),rgb(255, 255, 255));
+    background-image: linear-gradient(to bottom,rgb(11, 37, 58),rgb(255, 255, 255));
 }
 
 .f{
@@ -88,17 +91,17 @@
 .h{
     background-image: linear-gradient(to top,rgb(29, 95, 13),rgb(255, 255, 255));
 }
-.h .side-a{color: rgb(255, 255, 255); text-shadow: 0px 0px 1px black;;}
+.h .side-a{color: rgb(255, 255, 255); text-shadow: 0px 0px 1px black;}
 .h .side-b{color: rgb(105, 64, 64);}
 .h .inner{
     background-image: linear-gradient(to top,rgb(59, 131, 42),rgb(255, 255, 255));
 }
 
 .i{
-    background-image: linear-gradient(to top,rgb(7, 4, 59),rgb(170, 229, 252));
+    background-image: linear-gradient(to bottom,rgb(7, 4, 59),rgb(170, 229, 252));
 }
 .i .side-a{color: white;}
 .i .side-b{color: black;}
 .i .inner{
-    background-image: linear-gradient(to top,rgb(7, 4, 59),rgb(179, 229, 248));
+    background-image: linear-gradient(to bottom,rgb(7, 4, 59),rgb(179, 229, 248));
 }
