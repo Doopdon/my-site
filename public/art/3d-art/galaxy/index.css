@@ -46,8 +46,6 @@ html,body {
     position : absolute;
     background-color: white;
     border-radius: 50%;
-    /* transition : all 1s ease-out; */
-    /* opacity:.5; */
 }
 
 .red{
