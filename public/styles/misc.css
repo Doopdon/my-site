@@ -1,11 +1,17 @@
-#contact{
+.contact{
     width:100%;
     padding:10%;
     text-align: center;
 }
 
-#about-this-site{
+.about-this-site{
     width:100%;
     padding:10%;
     text-align: center;
+}
+
+.experience{
+    width:100%;
+    height: 300%;
+    padding:10%
 }

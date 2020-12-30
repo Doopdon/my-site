@@ -68,10 +68,12 @@
       .debug {
         display: inline;
         z-index: 1001;
-        background: rgba(0,0,0,.85);
-        color: #fff;
-        padding: .5em;
-        border-radius: 0 0 5px 5px;
+        background: transparent;
+        color: white;
+        border-radius: 5px;
+        border:1px solid white;
+        cursor: pointer;
+        padding:2px;
       }
       .debug-on .p-group {
         -webkit-transform: translate3d(800px, 0, -800px) rotateY(30deg);
@@ -91,6 +93,7 @@
         top: 0;
         left: .5em;
         display: none;
+        background-color: red;
       }
 
       .debug-on .debug-off-btn{

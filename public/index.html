@@ -10,11 +10,12 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/pancake.css">
   <link rel="stylesheet" href="styles/two-moon.css">
-  <link rel="stylesheet" href="styles/experience.css">
   <link rel="stylesheet" href="styles/nav.css">
   <link rel="stylesheet" href="styles/projects.css">
   <link rel="stylesheet" href="styles/misc.css">
   <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   <title>Gannon Huiting</title>
 </head>
 
@@ -33,7 +34,9 @@
 
 
   <div class="parallax">
-    <div class="p-group">
+    
+    <!--About me-->
+    <div id='about-me' class="p-group">
       <div class="p-layer p-base">
       </div>
       <div class="p-layer p-back">
@@ -54,12 +57,11 @@
         </div>
       </div>
     </div>
-    <!--About me-->
     <div class="p-group responsive">
       <div class="p-layer responsive p-base">
-        <div id='about-me'>
+        <div class='about-me'>
           <div class='about-me-title'>About Me</div>
-          <img class='profile-pic' src='../../images/me4.png'>
+          <img class='profile-pic' src='../../images/me-bw.png'>
           <p>I am a Denver-based developer with an emerged passion in front end development.</p>
           <p>I graduated from Kansas State University in 2016. I started my career working in integration; it was there
             I learned how to work with web technologies mostly web APIs and web sockets. My skills with web technologies
@@ -102,7 +104,8 @@
       </div>
     </div>
 
-    <div class="p-group">
+    <!--Experience-->
+    <div id='experience' class="p-group">
       <div class="p-layer p-base">
       </div>
       <div class="p-layer p-back">
@@ -111,10 +114,10 @@
         </div>
       </div>
     </div>
-    <!--Experience-->
+    
     <div class="p-group responsive">
       <div class="p-layer responsive p-base">
-        <div id='experience'>
+        <div class='experience'>
           <div class='job'>
             <div class='job-title-wrapper'>
               <div class='job-title'>
@@ -173,7 +176,8 @@
       </div>
     </div>
 
-    <div class="p-group">
+    <!--Projects-->
+    <div id='projects' class="p-group">
       <div class="p-layer p-base">
       </div>
       <div class="p-layer p-back">
@@ -182,11 +186,11 @@
         </div>
       </div>
     </div>
-    <!--Projects-->
+    
     <div class="p-group responsive">
       <div class="p-layer responsive p-base">
-        <div id="projects">
-          <div class="pancake">
+        <div class="projects">
+          <!-- <div class="pancake">
             <div class='project'>
               <a href='https://silverlake.herokuapp.com/pages/index/index.html' class='image-container'>
                 <img src='images/project-images/logo.png'>
@@ -214,9 +218,9 @@
                   button.</p>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class='project-category'>
-            <p>Framework Demo</p>
+            <p>React Demo</p>
           </div>
           <div class="pancake">
             <div class='project'>
@@ -227,10 +231,9 @@
               </div>
               <div class='description'>
                 <div class='title-wrapper'>
-                  <h5>React</h5>
                 </div>
                 <p>I made a simple react app (its still in its early stages, but I plan on adding more in the coming
-                  weeks) you can view it <a href='/frameworks/react/react-demo.html'>here</a></a></p>
+                  weeks) you can view it <a href='/frameworks/react/react-demo.html'>here</a>.</p>
               </div>
             </div>
           </div>
@@ -242,31 +245,28 @@
               <div class='image-container'>
                 <a href="/art/space-art/space-art.html" class='image-link'><img src='images/art/space-art.jpg'></a>
               </div>
-              <p>I found an artist online and really liked his work. I have been turning a few of his pieces into responsive web-pages.<a
-                  href="/art/space-art/space-art.html">Link</a></p>
+              <p>I found an artist online and really liked his work. I have been turning a few of his pieces into responsive web-pages. <a href="/art/space-art/space-art.html">Link</a></p>
             </div>
 
             <div class='project'>
               <div class='image-container'>
                 <a class='image-link' href="/art/tfrv/css-animations.html"><img src='images/art/rv.png'></a>
               </div>
-              <p>A did some animations for a small tax management company that worked with people traveling the country in RVs.<a href="/art/tfrv/css-animations.html">Link</p>
+              <p>A did some animations for a small tax management company that worked with people traveling the country in RVs. <a href="/art/tfrv/css-animations.html">Link</p>
             </div>
 
             <div class='project'>
               <div class='image-container'>
                 <a class='image-link' href="/art/snow/snow.html"><img src='images/art/snowflake.svg'></a>
               </div>
-              <p>I made this christmas themed scene with randomly generated snowflakes<a href="/art/snow/snow.html">Link</a></p>
+              <p>I made this christmas themed scene with randomly generated snowflakes. <a href="/art/snow/snow.html">Link</a></p>
             </div>
-
-
             
             <div class='project'>
               <div class='image-container'>
-                <a class='image-link' href="/art/tfrv/css-animations.html"><img src='images/3d-cube.png'></a>
+                <a class='image-link' href="/art/3d-art/compilation.html"><img src='images/3d-cube.png'></a>
               </div>
-              <p>I started getting pretty deep into 3d css animations<a href="/art/3d-art/compilation.html">Link</a></p>
+              <p>I started getting pretty deep into 3d css animations. <a href="/art/3d-art/compilation.html">Link</a></p>
             </div>
 
           </div>
@@ -277,7 +277,8 @@
       </div>
     </div>
 
-    <div class="p-group">
+    <!--About this site-->
+    <div id='about-this-site' class="p-group">
       <div class="p-layer p-base">
       </div>
       <div class="p-layer p-back">
@@ -289,18 +290,13 @@
 
     <div class="p-group responsive">
       <div class="p-layer responsive p-base">
-        <div id='about-this-site'>
+        <div class='about-this-site'>
           <p>This page has no frameworks, plugins or addons. It is pure hand written HTML/CSS/Javascript</p>
           <p>This site was made with the help of <a href='https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3/'>A demo by Kieth Clark</a> and <a href='https://www.ribbonriven.com/retro-futurism'>Art by Grant Yun</a> and I am more than happy to give both of them credit for code, color schemes, and Art direction.</p>
           <p>But this was not simple copy paste.</p>
           <p>I used the demo by Kieth and repurposed it to work with my vision. I needed to simplify his style sheet and make it generic enough to simply list sections without extra work. Originally it had hard coded z-indexes which I made unnecessary, and the sections were not responsive in a way that would allow for variable length content without messing up layer alignment. It took quite a few attempts to get it working in a way I felt was maintainable.</p>
           <p>As for the art, I took static images and turned them into responsive web elements. I kept the positioning and color schemes, But I plan on adding more and diverging from his original work more as time goes on.</p>
           <p>If you want a look behind the curtain you can turn on debug mode: <button class='debug-on debug'>Turn Debug On</button></p>
-          
-          <!-- <div class="debug">
-            <label><input id='debug-btn' type="checkbox"> Debug</label>
-          </div> -->
-
         </div>
       </div>
       <div class="p-layer p-back">
@@ -308,7 +304,7 @@
       </div>
     </div>
 
-    <div class="p-group">
+    <div id='contact' class="p-group">
       <div class="p-layer p-base">
       </div>
       <div class="p-layer p-back">
@@ -320,7 +316,7 @@
 
     <div class="p-group responsive">
       <div class="p-layer responsive p-base">
-        <div id='contact' class='section'>
+        <div class='contact' class='section'>
           <div class='title-wrapper'><h3>Contact info</h3></div>
           <div class='contact-method'>
               <a>Phone:</a>
@@ -350,13 +346,12 @@
     });
     function scrollTo(elemId) {
       var $elem = document.getElementById(elemId);
-      $elem.scrollIntoView({ behavior: "smooth" });
+      $elem.scrollIntoView({ behavior: "smooth"});
     }
   })();
 
 
   let body = document.getElementsByTagName('body')[0];
-
     let buttons = document.getElementsByClassName('debug');
     buttons[0].onclick = off;
     buttons[1].onclick = on;

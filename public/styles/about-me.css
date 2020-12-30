@@ -1,9 +1,9 @@
-#about-me{
+.about-me{
     width:100%;
     padding:10%
 }
 
-#about-me .about-me-title{
+.about-me-title{
     font-size: 2em;
     width:100%;
     text-align: center;
