@@ -1,0 +1,27 @@
+.moon{
+    position: absolute;
+    width:20vh;
+    height:20vh;
+    border-radius: 50%;
+    background-image: radial-gradient(circle at 120% -20%, rgb(255, 255, 255), rgb(0, 0, 0));
+}
+.moon.big{
+    width:40vh;
+    height:40vh;
+}
+.moon.small{
+    width:10vh;
+    height:10vh;
+}
+.red{
+    background-image: radial-gradient(circle at 120% -20%, rgb(243, 167, 167), rgb(0, 0, 0));
+}
+.blue{
+    background-image: radial-gradient(circle at 120% -20%, rgb(133, 138, 206), rgb(0, 0, 0));
+}
+.green{
+    background-image: radial-gradient(circle at 120% -20%, rgb(179, 233, 173), rgb(0, 0, 0));
+}
+.yellow{
+    background-image: radial-gradient(circle at 120% -20%, rgb(226, 221, 152), rgb(0, 0, 0));
+}

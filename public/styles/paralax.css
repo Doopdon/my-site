@@ -32,10 +32,16 @@
         position: relative;
         z-index: 100;
       }
-    
+
+
       .p-base {
         transform: translateZ(0);
         z-index: 15;
+      }
+
+      .p-back-base{
+        transform: translateZ(-150px) scale(1.5);
+        z-index: 10;
       }
     
       .p-back {
