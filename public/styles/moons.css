@@ -14,7 +14,7 @@
     height:10vh;
 }
 .red{
-    background-image: radial-gradient(circle at 120% -20%, rgb(243, 167, 167), rgb(0, 0, 0));
+    background-image: radial-gradient(circle at 120% -20%, rgb(243, 189, 167), rgb(0, 0, 0));
 }
 .blue{
     background-image: radial-gradient(circle at 120% -20%, rgb(133, 138, 206), rgb(0, 0, 0));
@@ -24,4 +24,23 @@
 }
 .yellow{
     background-image: radial-gradient(circle at 120% -20%, rgb(226, 221, 152), rgb(0, 0, 0));
+}
+
+
+.star{
+    position: absolute;
+    background-color:white;
+    width: 2px;
+    height: 2px;
+}
+
+.star.big{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+
+.star.small{
+    width: 1px;
+    height: 1px;
 }

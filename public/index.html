@@ -41,7 +41,7 @@
       <div class="p-layer p-base">
       </div>
       <div class="p-layer p-back-base">
-        <div class='moon small' style="top:80%; left:10%;"></div>
+        <div class='moon small yellow' style="top:80%; left:10%;"></div>
       </div>
       <div class="p-layer p-back">
         <div class="section-title">
@@ -104,10 +104,10 @@
         </div>
       </div>
       <div class="p-layer p-back-base">
-        <div class='moon small green' style="top:50%; right:10%;"></div>
+        <div class='moon small' style="top:50%; right:10%;"></div>
       </div>
       <div class="p-layer p-back">
-        <div class='moon yellow' style="top:50%; right:10%;"></div>
+        <div class='moon red' style="top:50%; right:10%;"></div>
       </div>
     </div>
 
@@ -124,7 +124,7 @@
         </div>
       </div>
       <div class="p-layer p-deep-back">
-        <div class='moon big red' style="top:70%; left:-10%;"></div>
+        <div class='moon big red' style="top:70%; left:-5%;"></div>
       </div>
     </div>
     
@@ -297,7 +297,6 @@
       <div class="p-layer p-base">
       </div>
       <div class="p-layer p-deep-back">
-        <div class='moon' style="top:10%; left:10%;"></div>
       </div>
       <div class="p-layer p-back">
         <div class="section-title">
@@ -358,28 +357,5 @@
   </div>
 </body>
 </body>
-<script>
-  (function () {
-    ['about-me', 'experience','projects','about-this-site','contact'].forEach(function (name) {
-      document.getElementById(name + '-link').onclick = function () { scrollTo(name) };
-    });
-    function scrollTo(elemId) {
-      var $elem = document.getElementById(elemId);
-      $elem.scrollIntoView({ behavior: "smooth"});
-    }
-  })();
-
-
-  let body = document.getElementsByTagName('body')[0];
-    let buttons = document.getElementsByClassName('debug');
-    buttons[0].onclick = off;
-    buttons[1].onclick = on;
-    function on() {
-      body.classList.add('debug-on');
-    }
-    function off() {
-      body.classList.remove('debug-on');
-    }
-</script>
-
+<script src='scripts/index.js'></script>
 </html>
