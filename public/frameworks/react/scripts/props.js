@@ -9,7 +9,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 ////npx babel --watch src --out-dir scripts --presets react-app/prod
-var propDemo = ['new thing', 'another thing', 'i am running out of things', 'im going to start numbering'];
+var propDemo = ['', 'new thing', 'another thing', 'i am running out of things', 'im going to start numbering'];
 var ind = 0;
 
 var MainPage = function (_React$Component) {

@@ -1,5 +1,5 @@
 ////npx babel --watch src --out-dir scripts --presets react-app/prod
-let propDemo = ['new thing','another thing','i am running out of things','im going to start numbering'];
+let propDemo = ['','new thing','another thing','i am running out of things','im going to start numbering'];
 let ind = 0;
 
 class MainPage extends React.Component{
