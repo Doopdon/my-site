@@ -1,0 +1,81 @@
+.atom{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.atom .nucleus{
+    background: rgb(255, 255, 255);
+    position: absolute;
+    width: 12vh;
+    height: 12vh;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.atom .ring{
+    position: absolute;
+    width:40vh;
+    height: 40vh;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 3vh solid rgb(255, 255, 255,.5);;
+
+    animation-duration : 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function : ease-in-out;
+   
+}
+
+.atom .ring-a{
+    animation-name: ring-a;
+    animation-delay: -2s;
+}
+.atom .ring-b{
+    animation-name: ring-b;
+    animation-delay: -1s;
+}
+.atom .ring-c{
+    animation-name: ring-c;
+}
+
+@keyframes ring-a{
+    0%{
+        transform: translate3d(-50%,-50%,0px) rotateX(60deg) rotateY(0deg) rotateZ(0deg);
+    }
+    50%{
+        transform: translate3d(-50%,-50%,0px) rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100%{
+        transform: translate3d(-50%,-50%,0px) rotateX(60deg) rotateY(0deg) rotateZ(0deg);
+    }
+}
+
+@keyframes ring-b{
+    0%{
+        transform: translate3d(-50%,-50%,0px) rotateX(50deg) rotateY(50deg) rotateZ(0deg);
+    }
+    50%{
+        transform: translate3d(-50%,-50%,0px) rotateX(90deg) rotateY(50deg) rotateZ(0deg);
+    }
+    100%{
+        transform: translate3d(-50%,-50%,0px) rotateX(50deg) rotateY(50deg) rotateZ(0deg);
+    }
+}
+
+@keyframes ring-c{
+    0%{
+        transform: translate3d(-50%,-50%,0px) rotateX(-50deg) rotateY(50deg) rotateZ(0deg);
+    }
+    50%{
+        transform: translate3d(-50%,-50%,0px) rotateX(-90deg) rotateY(50deg) rotateZ(0deg);
+    }
+    100%{
+        transform: translate3d(-50%,-50%,0px) rotateX(-50deg) rotateY(50deg) rotateZ(0deg);
+    }
+}
