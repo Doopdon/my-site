@@ -1,0 +1,41 @@
+body{padding:0px}
+*{box-sizing: border-box;}
+
+.scene{
+    width:100vw;
+    height: 100vh;
+}
+
+.building-container{
+    position: absolute;
+    width: 10vh;
+    height: 60vh;
+   
+    bottom:0;
+    right:10%
+}
+
+.building{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color:red;
+}
+
+.antenna{
+    position: absolute;
+    background-color: rgb(145, 39, 39);
+}
+
+.antenna.base{
+    width:40%;
+    height: 10%;
+    top:-10%;
+    left:10%;
+}
+.antenna.spire{
+    width:4%;
+    height: 30%;
+    left:20%;
+    top:-30%;
+}

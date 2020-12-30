@@ -10,7 +10,39 @@
 }
 
 .project .image-container img{
-    width:20vw;
-    height: 20vw;
-    border-radius: 50%;
+    width:80%;
+    height: 80%;
 }
+
+.image-link{
+    width: 30vw;
+    height: 30vw;
+    display: grid;
+    place-items: center;
+    margin:0 auto;
+}
+
+.image-link .frame{
+    /* background-image: linear-gradient(to top red black); */
+    width:80%;
+    height:80%;
+    display: block;
+    
+}
+.image-link .inner{
+    /* background: blue; */
+    position: absolute;
+    left:20px;
+    right:20px;
+    top:20px;
+    bottom:20px;
+}
+
+/* 
+.image-link iframe {
+    
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+} */

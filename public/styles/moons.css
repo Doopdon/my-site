@@ -30,7 +30,7 @@
 .star{
     position: absolute;
     background-color:white;
-    width: 2px;
+    width: 2px !important;
     height: 2px;
 }
 
