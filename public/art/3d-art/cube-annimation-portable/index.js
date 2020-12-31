@@ -79,6 +79,7 @@ function addCubeParts($cube){
 
     function makeRotation(x,y,z,rx,ry,rz){
         let multiplier = 3;
+        
         let translate = 'translate3d('+(x + xBase) +'px,'+(y + yBase)+'px,'+z+'px)';
         let translate2= 'translate3d('+(x*multiplier + xBase)+'px,'+(y*multiplier + yBase)+'px,'+z*multiplier+'px)';
         let rotate =  'rotateX('+rx+'deg) rotateY('+ry+'deg) rotateZ('+rz+'deg)';

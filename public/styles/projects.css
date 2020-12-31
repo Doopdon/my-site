@@ -38,6 +38,10 @@
     top:20px;
     bottom:20px;
 }
+.image-link .frame .moon{
+    width:5vw;
+    height: 5vw;
+}
 
 /* 
 .image-link iframe {
