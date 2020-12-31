@@ -20,6 +20,13 @@ body{
     text-align: center;
 }
 
+.section{
+    width:100%;
+    max-width: 1500px;
+    padding:max(10%,100px);
+    margin:0 auto;
+}
+
 .nav-to{
     position: absolute;
     top:-25vh;
