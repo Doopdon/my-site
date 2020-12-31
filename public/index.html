@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="styles/projects.css">
   <link rel="stylesheet" href="styles/misc.css">
   <link rel="stylesheet" href="styles/moons.css">
-  <link rel="stylesheet" href="styles/react-annimation.css">
+  <link rel="stylesheet" href="styles/react-animation.css">
   <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -293,8 +293,11 @@
             
             <div class='project'>
               <div class='image-container'>
-                <!-- <a class='image-link' href="/art/3d-art/compilation.html"><img src='images/3d-cube.png'></a> -->
-                <a class='image-link' href="/art/3d-art/compilation.html"><iframe src="/art/3d-art/cube-annimation/index.html" width="100%" height="100%"></iframe></a>
+                <!-- <a class='image-link' cube-animation-portable href="/art/3d-art/compilation.html"><img src='images/3d-cube.png'></a> -->
+                <div class='image-link'>
+                  <iframe src="/art/3d-art/cube-animation-portable/index.html" width="100%" height="100%"></iframe>
+                  <a href="/art/3d-art/compilation.html" class="iframe-link"></a>
+                </div>
               </div>
               <p>I started getting pretty deep into 3d CSS animations. <a href="/art/3d-art/compilation.html">Link</a></p>
             </div>
@@ -374,4 +377,6 @@
 </body>
 </body>
 <script src='scripts/index.js'></script>
+<script src='scripts/make-stars.js'></script>
+<!-- <script src='scripts/cube-animator-bable.js'></script> -->
 </html>
