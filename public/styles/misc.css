@@ -6,12 +6,15 @@
 
 .about-this-site{
     width:100%;
+    max-width: 1500px;
     padding:10%;
+    margin:0 auto;
     text-align: center;
 }
 
 .experience{
     width:100%;
-    height: 300%;
-    padding:10%
+    max-width: 1500px;
+    padding:10%;
+    margin:0 auto;
 }

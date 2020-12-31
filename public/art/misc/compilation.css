@@ -1,0 +1,25 @@
+*{box-sizing: border-box;}
+body{
+    margin:0;
+    text-align: center;
+}
+.part{
+    width: 100vw;
+    height: 100vh;
+}
+
+iframe{
+    border:none;
+}
+
+.description{
+    text-align: center;
+    letter-spacing: 2px;
+    width:100vw;
+    padding:10px;
+}
+
+.container{
+    height: 90hv;
+    overflow: scroll;
+}
