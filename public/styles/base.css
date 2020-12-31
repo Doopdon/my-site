@@ -22,7 +22,7 @@ body{
 
 .nav-to{
     position: absolute;
-    top:-25%;
+    top:-25vh;
 }
 
 .fade-in{

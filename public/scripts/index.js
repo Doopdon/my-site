@@ -31,12 +31,6 @@ function randBiased(num){
 }
 
 
-window.scroll(function(e) {   
-  console.log(window.scrollTop())
-  if(window.scrollTop() >=150) {
-    window.scrollTop(150);
-  }
-});
 
     
 
