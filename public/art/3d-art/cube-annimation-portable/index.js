@@ -1,6 +1,6 @@
 let $cubes =  document.getElementsByClassName('animated-cube')
-let xBase = 140;
-let yBase = 140;
+
+let shouldMakeStyle = true;
 
 loop($cubes.length,function(i){
     let $cube = $cubes[i];
@@ -8,6 +8,7 @@ loop($cubes.length,function(i){
 })
 
 function addCubeParts($cube){
+
     let faces = [];
     loop(54,function(i){
         let elem = document.createElement('div');
@@ -23,27 +24,34 @@ function addCubeParts($cube){
     [-1,-1],[0,-1],[1,-1]
     ];
 
-    makeTopBottom(30,faces,0,-1)
-    makeTopBottom(30,faces,9,1)
+    let xBase = 10;
+    let yBase = 10;
+    let offset = 3;
+    scale = 3;
+    size = 3;
+    makeTopBottom(offset,faces,0,-1)
+    makeTopBottom(offset,faces,9,1)
 
-    makeFrontBack(30,faces,18,-1)
-    makeFrontBack(30,faces,27,1)
+    makeFrontBack(offset,faces,18,-1)
+    makeFrontBack(offset,faces,27,1)
 
-    makeRightLeft(30,faces,36,-1)
-    makeRightLeft(30,faces,45,1)
+    makeRightLeft(offset,faces,36,-1)
+    makeRightLeft(offset,faces,45,1)
 
+    shouldMakeStyle =  false;
 
     function makeTopBottom(offset,faces,index,inv){
         loop(9,function(i){
             let name = inv == 1? 'bottom' :'top'  
             let x = (offset*indexes[i][0])*inv;
-            let y = (offset+20)*inv;
+            let y = (offset+size)*inv;
             let z = (offset*indexes[i][1])*inv;
     
             let elem = faces[i+index];
             elem.classList.add(name+'-'+i);
             let {translate,translate2,rotate} = makeRotation(x,y,z,90,0,0)
-            makeStyle(name,i,translate,translate2,rotate);
+            
+            shouldMakeStyle && makeStyle(name,i,translate,translate2,rotate);
             
         })
     }
@@ -52,14 +60,14 @@ function addCubeParts($cube){
         loop(9,function(i){
     
             let name = inv == 1? 'front' :'back'
-            let x = (offset+20)*inv;
+            let x = (offset+size)*inv;
             let y = (offset*indexes[i][0])*inv;
             let z = (offset*indexes[i][1])*inv;
     
             let elem = faces[i+index];
             elem.classList.add(name+'-'+i);
             let {translate,translate2,rotate} = makeRotation(x,y,z,0,90,0)
-            makeStyle(name,i,translate,translate2,rotate);
+            shouldMakeStyle && makeStyle(name,i,translate,translate2,rotate);
         })
     }
     
@@ -68,20 +76,21 @@ function addCubeParts($cube){
             let name = inv == 1? 'left' :'right'
             let x = (offset*indexes[i][1])*inv;
             let y = (offset*indexes[i][0])*inv;
-            let z = (offset+20)*inv;
+            let z = (offset+size)*inv;
 
             let elem = faces[i+index];
             elem.classList.add(name+'-'+i);
-            let {translate,translate2,rotate} = makeRotation(x,y,z,0,0,90)
-            makeStyle(name,i,translate,translate2,rotate);
+            let {translate,translate2,rotate} = makeRotation(x,y,z,0,0,0)
+            shouldMakeStyle && makeStyle(name,i,translate,translate2,rotate);
         })
     }
 
     function makeRotation(x,y,z,rx,ry,rz){
-        let multiplier = 3;
+        let multiplier = scale;
         
-        let translate = 'translate3d('+(x + xBase) +'px,'+(y + yBase)+'px,'+z+'px)';
-        let translate2= 'translate3d('+(x*multiplier + xBase)+'px,'+(y*multiplier + yBase)+'px,'+z*multiplier+'px)';
+        let translate = 'translate3d(calc('+x+'vw + 450%),calc('+y+'vh + 450%),'+z+'vw)';
+        let translate2 = 'translate3d(calc('+(x*multiplier)+'vw + 450%),calc('+(y*multiplier)+'vh + 450%),'+(z*multiplier)+'vw)';
+        // let translate2= 'translate3d('+(x*multiplier + xBase)+'vw,'+(y*multiplier + yBase)+'vh,'+z*multiplier+'vw)';
         let rotate =  'rotateX('+rx+'deg) rotateY('+ry+'deg) rotateZ('+rz+'deg)';
         return {translate,translate2,rotate}
     }
