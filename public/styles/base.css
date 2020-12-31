@@ -20,6 +20,11 @@ body{
     text-align: center;
 }
 
+.nav-to{
+    position: absolute;
+    top:-25%;
+}
+
 .fade-in{
     animation-name: fade-in;
     animation-duration: 3s;

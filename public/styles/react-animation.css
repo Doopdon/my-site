@@ -8,8 +8,8 @@
 .atom .nucleus{
     background: rgb(255, 255, 255);
     position: absolute;
-    width: 12vh;
-    height: 12vh;
+    width: 12%;
+    height: 12%;
     left:50%;
     top:50%;
     transform: translate(-50%, -50%);
@@ -18,8 +18,8 @@
 
 .atom .ring{
     position: absolute;
-    width:40vh;
-    height: 40vh;
+    width: 50%;
+    height: 50%;
     left:50%;
     top:50%;
     transform: translate(-50%, -50%);
