@@ -1,9 +1,14 @@
+:root{
+    --moon-color-offset: -100% 200%;
+    --moon-base-color: rgb(58,89,176);
+}
+
 .moon{
     position: absolute;
     width:20vh;
     height:20vh;
     border-radius: 50%;
-    background-image: radial-gradient(circle at 120% -20%, rgb(255, 255, 255), rgb(0, 0, 0));
+    background-image: radial-gradient(circle at var(--moon-color-offset), rgb(255, 255, 255), var(--moon-base-color));
 }
 .moon.big{
     width:40vh;
@@ -13,18 +18,13 @@
     width:10vh;
     height:10vh;
 }
-.red{
-    background-image: radial-gradient(circle at 120% -20%, rgb(243, 189, 167), rgb(0, 0, 0));
+.moon.red{
+    background-image: radial-gradient(circle at var(--moon-color-offset),  rgb(243, 189, 167), var(--moon-base-color));
 }
-.blue{
-    background-image: radial-gradient(circle at 120% -20%, rgb(133, 138, 206), rgb(0, 0, 0));
+.moon.redder{
+    background-image: radial-gradient(circle at -20% 120%,  rgb(243, 167, 167), var(--moon-base-color));
 }
-.green{
-    background-image: radial-gradient(circle at 120% -20%, rgb(179, 233, 173), rgb(0, 0, 0));
-}
-.yellow{
-    background-image: radial-gradient(circle at 120% -20%, rgb(226, 221, 152), rgb(0, 0, 0));
-}
+
 
 
 .star{
@@ -43,4 +43,44 @@
 .star.small{
     width: 1px;
     height: 1px;
+}
+
+.cloud-section{
+    width:100vw;
+    height:50vw;
+    position: relative;
+}
+
+.cloud{
+    position: absolute;
+    width:30%;
+    height:10%;
+    border-radius: 50%;
+    filter: blur(12px);
+    /* background-image: radial-gradient(circle at var(--moon-color-offset),  rgb(243, 189, 167), var(--moon-base-color)); */
+    /* background-image: linear-gradient(to bottom,rgb(11, 37, 58),rgb(219, 198, 170),rgb(247, 175, 93)); */
+    background-image: linear-gradient(to top right, rgb(243, 157, 157.8), rgb(111, 108, 138.5));
+    /* background-image: linear-gradient(to top rgb(243, 157, 157,.8) rgba(111, 108, 138, 0.5)); */
+}
+
+.cloud.big{
+    width:60%;
+    height:20%;
+}
+
+.cloud.small{
+    width:15%;
+    height:5%;
+}
+
+.cloud.red{
+    /* background: rgb(243, 157, 157,.8); */
+}
+
+.cloud.blue{
+    /* background: rgba(111, 108, 138, 0.5); */
+}
+
+.cloud.orange{
+    background: rgba(235, 167, 79, 0.5);
 }
