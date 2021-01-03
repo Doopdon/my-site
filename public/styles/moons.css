@@ -56,11 +56,23 @@
     width:30%;
     height:10%;
     border-radius: 50%;
-    filter: blur(12px);
+    filter: blur(calc(var(--screen-area)*2));
     /* background-image: radial-gradient(circle at var(--moon-color-offset),  rgb(243, 189, 167), var(--moon-base-color)); */
     /* background-image: linear-gradient(to bottom,rgb(11, 37, 58),rgb(219, 198, 170),rgb(247, 175, 93)); */
-    background-image: linear-gradient(to top right, rgb(243, 157, 157.8), rgb(111, 108, 138.5));
+    
     /* background-image: linear-gradient(to top rgb(243, 157, 157,.8) rgba(111, 108, 138, 0.5)); */
+}
+
+.cloud.upper{
+    background-image: linear-gradient(to top right, rgb(243, 157, 157,.8), rgb(111, 108, 138,.5));
+}
+
+.cloud.middle{
+    background-image: linear-gradient(to top right, rgb(255, 227, 152, 50%), rgb(194, 72, 29, 80%));
+}
+
+.cloud.lower{
+    background-image: linear-gradient(to bottom right, rgb(130, 7, 7, 50%), rgb(255, 233, 89 , 50%));
 }
 
 .cloud.big{
