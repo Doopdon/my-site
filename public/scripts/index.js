@@ -32,7 +32,7 @@ function randBiased(num){
 
 
 (function(){
-  $style = document.createElement('style');
+  let $style = document.createElement('style');
   document.getElementsByTagName('head')[0].appendChild($style);
   function sizeChange() {
     let screenArea = window.innerHeight / 26325 * window.innerWidth;
