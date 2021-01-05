@@ -1,4 +1,9 @@
 *{box-sizing: border-box;}
+:root{
+    --base-gray: rgb(39,44,52);
+    --base-blue: rgb(101,218,249);
+    --base-white:white;
+}
 body{
     margin:0;
     font: 525 15px/1.5 'Lato', sans-serif;
@@ -6,19 +11,37 @@ body{
 }
 
 .nav{
-    background-color: grey;
+    background-color: var(--base-gray);
     width:100vw;
     height:calc(10vh + 50px);
 }
 
-.nav .button{
+.button{
     margin:5vh;
+    padding:5px 10px 5px 10px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color:white;
+    border: none;
+    background-color: var(--base-gray);
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+/* 
+.action.button{
+    background-color: var(--base-gray);
+} */
+
+.nav .button{
     width: 100px;
     height: 50px;
-    border-radius: 5px;
     position: absolute;
     top:0;
-    background-color: rgb(32, 178, 39);
+    font-weight: 700;
+    background: var(--base-blue);
+    color: black;
 }
 
 .nav .prev{
@@ -31,4 +54,8 @@ body{
 
 .page-container{
     padding:5vw;
+}
+
+.button.grey-out{
+    display: none;
 }

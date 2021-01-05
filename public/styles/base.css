@@ -1,8 +1,16 @@
+:root{
+    --text-shadow-color: rgb(87, 87, 87,.2);
+}
 * { 
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
      box-sizing: border-box; 
+     text-shadow:   -1px 1px 0 var(--text-shadow-color),
+                    1px 1px 0 var(--text-shadow-color),
+                    1px -1px 0 var(--text-shadow-color),
+                    -1px -1px 0 var(--text-shadow-color);
 }
+
 
 body{
     margin: 0px;

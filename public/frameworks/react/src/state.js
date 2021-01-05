@@ -27,7 +27,7 @@ class State extends React.Component{
             <p>State is simply an object that react uses to build components, when the object changes the components are changed</p>
             <p className='state-p'>Here I have a JSON object that defines a name with a value of <a>{this.state.name}</a>, a date, in this case <a>{this.state.date}</a> and a list with <a>{this.state.list.length}</a> items in it. Feel free to change it, you will see it reflected in the various elements</p>
             {this.textArea}
-            <div class='state-display'>
+            <div className='state-display'>
                 <h2>Name:{this.state.name}</h2>
                 <h2>Date:{this.state.date}</h2>
                 <ul>

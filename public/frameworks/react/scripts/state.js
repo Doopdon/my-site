@@ -83,7 +83,7 @@ var State = function (_React$Component) {
                 this.textArea,
                 React.createElement(
                     'div',
-                    { 'class': 'state-display' },
+                    { className: 'state-display' },
                     React.createElement(
                         'h2',
                         null,

@@ -9,7 +9,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 ////npx babel --watch src --out-dir scripts --presets react-app/prod
-var propDemo = ['', 'new thing', 'another thing', 'i am running out of things', 'im going to start numbering'];
+var propDemo = ['', 'New Component with this prop', 'Another prop', 'This prop has a 🚀 symbol ', 'Now I will just use numbers as a prop.'];
 var ind = 0;
 
 var MainPage = function (_React$Component) {
@@ -31,6 +31,7 @@ var MainPage = function (_React$Component) {
         value: function add() {
             ind++;
             this.setState({ list: [].concat(_toConsumableArray(this.state.list), [propDemo[ind] || ind]) });
+            window.scrollTo(0, document.body.scrollHeight);
         }
     }, {
         key: 'render',
@@ -39,7 +40,7 @@ var MainPage = function (_React$Component) {
 
             return React.createElement(
                 'div',
-                { className: 'page-container' },
+                { className: 'page-container', id: 'props' },
                 React.createElement(
                     'p',
                     null,
@@ -48,7 +49,19 @@ var MainPage = function (_React$Component) {
                 React.createElement(
                     'div',
                     { className: 'code' },
-                    '\uFE64Mycomponent MyProp={\'my-prop-value\'}\uFE65'
+                    '\uFE64',
+                    React.createElement(
+                        'a',
+                        { className: 'class' },
+                        'Mycomponent'
+                    ),
+                    ' MyProp={',
+                    React.createElement(
+                        'a',
+                        { className: 'string' },
+                        '\'my-prop-value\''
+                    ),
+                    '}/>'
                 ),
                 React.createElement(
                     'p',
@@ -66,8 +79,8 @@ var MainPage = function (_React$Component) {
                     'class DemoComp extends Component{\n                    constructor(props){\n                        super(props)\n                    }\n                    return(){\n                        return <div>\n                            <h1>{this.props.MyProp}</h1>\n                        </div>\n                    }\n                }'
                 ),
                 React.createElement(
-                    'button',
-                    { onClick: this.add },
+                    'div',
+                    { className: 'button action', onClick: this.add },
                     'Add new component'
                 ),
                 this.state.list.map(function (item) {

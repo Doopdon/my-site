@@ -62,9 +62,9 @@ var Index = function (_React$Component) {
     }, {
         key: 'prevButton',
         value: function prevButton() {
-            var greyOut = pageIndex == 0 ? '' : 'grey-out';
+            var greyOut = pageIndex == 0 ? 'grey-out' : '';
             return React.createElement(
-                'button',
+                'div',
                 { className: 'prev button ' + greyOut, onClick: this.prev },
                 'Previous page'
             );
@@ -72,9 +72,9 @@ var Index = function (_React$Component) {
     }, {
         key: 'nextButton',
         value: function nextButton() {
-            var greyOut = pageIndex == pages.length - 1 ? '' : 'grey-out';
+            var greyOut = pageIndex == pages.length - 1 ? 'grey-out' : '';
             return React.createElement(
-                'button',
+                'div',
                 { className: 'next button ' + greyOut, onClick: this.next },
                 'Next page'
             );

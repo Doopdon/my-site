@@ -12,7 +12,10 @@ var MainPage = function (_React$Component) {
     function MainPage(props) {
         _classCallCheck(this, MainPage);
 
-        return _possibleConstructorReturn(this, (MainPage.__proto__ || Object.getPrototypeOf(MainPage)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (MainPage.__proto__ || Object.getPrototypeOf(MainPage)).call(this, props));
+
+        _this.sectionNames = ['components', 'state', 'props'];
+        return _this;
     }
 
     _createClass(MainPage, [{
@@ -31,27 +34,15 @@ var MainPage = function (_React$Component) {
                 React.createElement(
                     'div',
                     { className: 'link-buttons' },
-                    React.createElement(
-                        'div',
-                        { className: 'link-button', onClick: function onClick() {
-                                return _this2.props.goTo('components');
-                            } },
-                        'Components'
-                    ),
-                    React.createElement(
-                        'div',
-                        { className: 'link-button', onClick: function onClick() {
-                                return _this2.props.goTo('state');
-                            } },
-                        'State'
-                    ),
-                    React.createElement(
-                        'div',
-                        { className: 'link-button', onClick: function onClick() {
-                                return _this2.props.goTo('props');
-                            } },
-                        'props'
-                    )
+                    this.sectionNames.map(function (name, i) {
+                        return React.createElement(
+                            'div',
+                            { key: i, className: 'link button', onClick: function onClick() {
+                                    return _this2.props.goTo(name);
+                                } },
+                            name
+                        );
+                    })
                 )
             );
         }

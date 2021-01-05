@@ -45,13 +45,13 @@ class Index extends React.Component{
     }
 
     prevButton(){
-        let greyOut = pageIndex == 0 ? '' : 'grey-out';
-        return <button className={'prev button '+greyOut} onClick={this.prev}>Previous page</button>
+        let greyOut = pageIndex == 0 ? 'grey-out' : '';
+        return <div className={'prev button '+greyOut} onClick={this.prev}>Previous page</div>
     }
 
     nextButton(){
-        let greyOut = pageIndex == pages.length-1 ? '' : 'grey-out'
-        return <button className={'next button '+greyOut} onClick={this.next}>Next page</button>
+        let greyOut = pageIndex == pages.length-1 ? 'grey-out' : ''
+        return <div className={'next button '+greyOut} onClick={this.next}>Next page</div>
     }
 
     render(){
